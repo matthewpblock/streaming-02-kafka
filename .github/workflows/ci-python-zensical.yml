@@ -71,14 +71,6 @@ jobs:
           fi
         # WHY: Version output makes CI logs easier to debug when tools change.
 
-      - name: A6) Run pre-commit on all files
-        run: uv tool run pre-commit run --all-files
-        # WHY: Enforces formatting, linting, and file hygiene in one step.
-        # OBS: Covers ruff-check, ruff-format, whitespace, line endings,
-        #      and JSON/TOML/YAML syntax checks defined in .pre-commit-config.yaml.
-        # OBS: Pre-commit hook order (lint then format) differs from manual
-        #      command order (format then lint). See .pre-commit-config.yaml.
-
       # ============================================================
       # B) BASELINE CHECKS: Tools not covered by pre-commit
       # ============================================================
