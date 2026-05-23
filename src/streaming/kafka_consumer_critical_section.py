@@ -65,7 +65,7 @@ ROOT_DIR: Final[Path] = Path.cwd()
 DATA_DIR: Final[Path] = ROOT_DIR / "data"
 OUTPUT_DIR: Final[Path] = DATA_DIR / "output"
 
-OUTPUT_CSV: Final[Path] = OUTPUT_DIR / "consumed_sales.csv"
+OUTPUT_CSV: Final[Path] = OUTPUT_DIR / "consumed_sales_critical_section.csv"
 
 
 # ==========================================================
@@ -201,23 +201,18 @@ def process_message(row: dict[str, Any]) -> dict[str, Any]:
     LOG.info("Processing raw message.")
 
     try:
-        # Professional Modification: Extract specific fields and add a derived metric
-        processed_row = {
-            "order_id": row.get("order_id", "UNKNOWN"),
-            "region_id": row.get("region_id", "UNKNOWN"),
-            "total_sale_value": round(
-                float(row.get("unit_price", 0.0)) * int(row.get("quantity", 1)), 2
-            ),
-        }
+        # Professional Modification: Keep original fields and add a derived metric
+        processed_row = row.copy()
+        processed_row["total_sale_value"] = round(
+            float(row.get("unit_price", 0.0)) * int(row.get("quantity", 1)), 2
+        )
         return processed_row
     except Exception as e:
         LOG.error(f"Error processing message: {e} | Raw row: {row}")
         # Return a fallback row to ensure consistent CSV columns
-        return {
-            "order_id": row.get("order_id", "ERROR"),
-            "region_id": row.get("region_id", "ERROR"),
-            "total_sale_value": 0.0,
-        }
+        fallback_row = row.copy()
+        fallback_row["total_sale_value"] = 0.0
+        return fallback_row
 
 
 def consume_messages(consumer: Any) -> int:
