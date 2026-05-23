@@ -58,6 +58,7 @@ log_env_vars(LOG)
 COURSE_NAME: Final[str] = "Streaming Data"
 TIMEOUT_SECONDS: Final[float] = float(os.getenv("CONSUMER_TIMEOUT_SECONDS", "10.0"))
 MAX_MESSAGES: Final[int] = int(os.getenv("CONSUMER_MAX_MESSAGES", "1000"))
+MAX_MESSAGES: Final[int] = int(os.getenv("CONSUMER_MAX_MESSAGES", "100"))
 
 # === DECLARE CONSTANT PATHS ===
 
