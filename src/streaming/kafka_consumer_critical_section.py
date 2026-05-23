@@ -196,10 +196,26 @@ def process_message(row: dict[str, Any]) -> dict[str, Any]:
         row: A raw consumed Kafka message row.
 
     Returns:
-        The same row.
+        A transformed row with selected fields.
     """
     LOG.info("Processing raw message.")
-    return row
+
+    try:
+        # Professional Modification: Extract specific fields and add a derived metric
+        processed_row = {
+            "order_id": row.get("order_id", "UNKNOWN"),
+            "region_id": row.get("region_id", "UNKNOWN"),
+            "total_sale_value": round(float(row.get("unit_price", 0.0)) * int(row.get("quantity", 1)), 2)
+        }
+        return processed_row
+    except Exception as e:
+        LOG.error(f"Error processing message: {e} | Raw row: {row}")
+        # Return a fallback row to ensure consistent CSV columns
+        return {
+            "order_id": row.get("order_id", "ERROR"),
+            "region_id": row.get("region_id", "ERROR"),
+            "total_sale_value": 0.0
+        }
 
 
 def consume_messages(consumer: Any) -> int:
