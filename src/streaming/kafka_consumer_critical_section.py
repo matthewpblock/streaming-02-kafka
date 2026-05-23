@@ -205,7 +205,9 @@ def process_message(row: dict[str, Any]) -> dict[str, Any]:
         processed_row = {
             "order_id": row.get("order_id", "UNKNOWN"),
             "region_id": row.get("region_id", "UNKNOWN"),
-            "total_sale_value": round(float(row.get("unit_price", 0.0)) * int(row.get("quantity", 1)), 2)
+            "total_sale_value": round(
+                float(row.get("unit_price", 0.0)) * int(row.get("quantity", 1)), 2
+            ),
         }
         return processed_row
     except Exception as e:
@@ -214,7 +216,7 @@ def process_message(row: dict[str, Any]) -> dict[str, Any]:
         return {
             "order_id": row.get("order_id", "ERROR"),
             "region_id": row.get("region_id", "ERROR"),
-            "total_sale_value": 0.0
+            "total_sale_value": 0.0,
         }
 
 
