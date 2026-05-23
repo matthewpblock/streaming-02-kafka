@@ -225,7 +225,7 @@ Clear the terminal, then start the consumer.
 
 ```shell
 clear
-uv run python -m streaming.kafka_consumer_case
+uv run python -m streaming.kafka_consumer_critical_section
 ```
 
 To start fresh, see
