@@ -199,7 +199,7 @@ uvx pre-commit run --all-files
 
 # run the producer
 clear
-uv run python -m streaming.kafka_producer_critical_section
+uv run python -m streaming.kafka_producer_garmin
 
 
 # do chores
@@ -224,7 +224,7 @@ Clear the terminal, then start the consumer.
 
 ```shell
 clear
-uv run python -m streaming.kafka_consumer_critical_section
+uv run python -m streaming.kafka_consumer_garmin
 ```
 
 To start fresh, see

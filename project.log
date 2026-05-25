@@ -5609,3 +5609,2103 @@
 2026-05-23 11:02:00 | INFO | C02 | ========================
 2026-05-23 11:02:00 | INFO | C02 | Consumer executed successfully!
 2026-05-23 11:02:00 | INFO | C02 | ========================
+2026-05-24 18:30:31 | DEBUG | P02 | KAFKA_BOOTSTRAP_SERVERS           = localhost:9092
+2026-05-24 18:30:31 | DEBUG | P02 | KAFKA_BROKER_ADDRESS_FAMILY       = v6
+2026-05-24 18:30:31 | DEBUG | P02 | KAFKA_TOPIC                       = streaming-02-kafka-garmin
+2026-05-24 18:30:31 | DEBUG | P02 | KAFKA_CLEAR_TOPIC_ON_START        = true
+2026-05-24 18:30:31 | DEBUG | P02 | PRODUCER_MESSAGE_COUNT            = 100
+2026-05-24 18:30:31 | DEBUG | P02 | PRODUCER_MESSAGE_INTERVAL_SECONDS = 2
+2026-05-24 18:30:31 | DEBUG | P02 | PRODUCER_MAX_MESSAGES             = 100
+2026-05-24 18:30:31 | DEBUG | P02 | PRODUCER_POLL_INTERVAL_SECONDS    = 15
+2026-05-24 18:30:31 | DEBUG | P02 | KAFKA_GROUP_ID                    = streaming-consumer-group-A
+2026-05-24 18:30:31 | DEBUG | P02 | KAFKA_AUTO_OFFSET_RESET           = earliest
+2026-05-24 18:30:31 | DEBUG | P02 | CONSUMER_TIMEOUT_SECONDS          = 10
+2026-05-24 18:30:31 | DEBUG | P02 | CONSUMER_MAX_MESSAGES             = 1000
+2026-05-24 18:30:31 | INFO | P02 | === RUN START ===
+2026-05-24 18:30:31 | INFO | P02 | project=P02
+2026-05-24 18:30:31 | INFO | P02 | repo_dir=streaming-02-kafka
+2026-05-24 18:30:31 | INFO | P02 | python=3.14.5
+2026-05-24 18:30:31 | INFO | P02 | os=Windows 11
+2026-05-24 18:30:31 | INFO | P02 | shell=powershell
+2026-05-24 18:30:31 | INFO | P02 | cwd=.
+2026-05-24 18:30:31 | INFO | P02 | github_actions=False
+2026-05-24 18:30:31 | INFO | P02 | ========================
+2026-05-24 18:30:31 | INFO | P02 | START producer main()
+2026-05-24 18:30:31 | INFO | P02 | ========================
+2026-05-24 18:30:31 | INFO | P02 | ROOT_DIR = .
+2026-05-24 18:30:31 | INFO | P02 | DATA_DIR = data
+2026-05-24 18:30:31 | INFO | P02 | GARMIN_CSV = data\GarminTrainingData.csv
+2026-05-24 18:30:31 | INFO | P02 | ========================
+2026-05-24 18:30:31 | INFO | P02 | SECTION A. Acquire
+2026-05-24 18:30:31 | INFO | P02 | ========================
+2026-05-24 18:30:31 | INFO | P02 | Loading settings from .env...
+2026-05-24 18:30:31 | INFO | P02 | KAFKA_BOOTSTRAP_SERVERS           = localhost:9092
+2026-05-24 18:30:31 | INFO | P02 | KAFKA_TOPIC                       = streaming-02-kafka-garmin
+2026-05-24 18:30:31 | INFO | P02 | PRODUCER_MESSAGE_COUNT            = 100
+2026-05-24 18:30:31 | INFO | P02 | PRODUCER_MESSAGE_INTERVAL_SECONDS = 2.0
+2026-05-24 18:30:31 | INFO | P02 | KAFKA_CLEAR_TOPIC_ON_START        = True
+2026-05-24 18:30:31 | INFO | P02 | Verifying Kafka connection...
+2026-05-24 18:30:31 | INFO | P02 | Kafka port is reachable.
+2026-05-24 18:30:38 | INFO | P02 | ========================
+2026-05-24 18:30:38 | INFO | P02 | SECTION P. Produce Messages
+2026-05-24 18:30:38 | INFO | P02 | ========================
+2026-05-24 18:30:38 | INFO | P02 | Sending messages...
+2026-05-24 18:30:38 | INFO | P02 | Sending up to 100 message(s) to topic 'streaming-02-kafka-garmin'.
+2026-05-24 18:30:38 | INFO | P02 | Watch each activity arrive. Press CTRL+C to stop early.
+
+2026-05-24 18:30:38 | INFO | P02 | {
+  Activity ID: 21965542196
+  Date: 2026-02-23
+  Activity Name: Honolulu - W01D1-Easy Run
+  Type: running
+  Distance (km): 3.46
+  Duration (min): 41.47
+  Pace (min/km): 11.99
+  Avg HR: 96
+  Max HR: 119
+  Calories: 249
+  Avg Cadence: 98
+  Elevation Gain (m): 49.4
+  Z1 (min): 9.2
+  Z2 (min): 0
+  Z3 (min): 0
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:30:38 | INFO | P02 |   Sending message with key=running
+2026-05-24 18:30:39 | INFO | P02 |   MESSAGE SENT  sent=1
+2026-05-24 18:30:41 | INFO | P02 | {
+  Activity ID: 21954265312
+  Date: 2026-02-22
+  Activity Name: Honolulu Walking
+  Type: walking
+  Distance (km): 1.99
+  Duration (min): 21.54
+  Pace (min/km): 10.84
+  Avg HR: 128
+  Max HR: 147
+  Calories: 163
+  Avg Cadence: 87.796875
+  Elevation Gain (m): 33
+  Z1 (min): 7.32
+  Z2 (min): 13.87
+  Z3 (min): 0.35
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 43
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:30:41 | INFO | P02 |   Sending message with key=walking
+2026-05-24 18:30:41 | INFO | P02 |   MESSAGE SENT  sent=2
+2026-05-24 18:30:43 | INFO | P02 | {
+  Activity ID: 21943859743
+  Date: 2026-02-21
+  Activity Name: Coherence
+  Type: breathwork
+  Distance (km): 0
+  Duration (min): 15.57
+  Pace (min/km): 0
+  Avg HR: 94
+  Max HR: 107
+  Calories: 0
+  Avg Cadence: 0
+  Elevation Gain (m): 0
+  Z1 (min): 0.91
+  Z2 (min): 0
+  Z3 (min): 0
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 
+  Avg Stress: 70
+  Max Stress: 83
+  Start Stress: 83
+  End Stress: 60
+  Stress Diff: -23
+}
+2026-05-24 18:30:43 | INFO | P02 |   Sending message with key=breathwork
+2026-05-24 18:30:43 | INFO | P02 |   MESSAGE SENT  sent=3
+2026-05-24 18:30:45 | INFO | P02 | {
+  Activity ID: 21943770023
+  Date: 2026-02-21
+  Activity Name: Honolulu - Base
+  Type: running
+  Distance (km): 5.11
+  Duration (min): 44.79
+  Pace (min/km): 8.77
+  Avg HR: 150
+  Max HR: 164
+  Calories: 402
+  Avg Cadence: 139.703125
+  Elevation Gain (m): 56.8
+  Z1 (min): 1.35
+  Z2 (min): 6.13
+  Z3 (min): 37.28
+  Z4 (min): 0.02
+  Z5 (min): 0
+  VO2 Max: 43
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:30:45 | INFO | P02 |   Sending message with key=running
+2026-05-24 18:30:45 | INFO | P02 |   MESSAGE SENT  sent=4
+2026-05-24 18:30:47 | INFO | P02 | {
+  Activity ID: 21921828818
+  Date: 2026-02-19
+  Activity Name: Honolulu - Base
+  Type: running
+  Distance (km): 4.05
+  Duration (min): 33.09
+  Pace (min/km): 8.18
+  Avg HR: 146
+  Max HR: 160
+  Calories: 328
+  Avg Cadence: 136.171875
+  Elevation Gain (m): 50.7
+  Z1 (min): 1.52
+  Z2 (min): 6.83
+  Z3 (min): 24.23
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 43
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:30:47 | INFO | P02 |   Sending message with key=running
+2026-05-24 18:30:47 | INFO | P02 |   MESSAGE SENT  sent=5
+2026-05-24 18:30:49 | INFO | P02 | {
+  Activity ID: 21892130373
+  Date: 2026-02-16
+  Activity Name: Rucking the dog 
+  Type: walking
+  Distance (km): 1.98
+  Duration (min): 26.06
+  Pace (min/km): 13.17
+  Avg HR: 114
+  Max HR: 151
+  Calories: 167
+  Avg Cadence: 77.296875
+  Elevation Gain (m): 31.7
+  Z1 (min): 12.23
+  Z2 (min): 5.88
+  Z3 (min): 1.27
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 43
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:30:49 | INFO | P02 |   Sending message with key=walking
+2026-05-24 18:30:49 | INFO | P02 |   MESSAGE SENT  sent=6
+2026-05-24 18:30:51 | INFO | P02 | {
+  Activity ID: 21889719484
+  Date: 2026-02-16
+  Activity Name: Honolulu - Hill sprints 10*15s
+  Type: running
+  Distance (km): 3.17
+  Duration (min): 28.72
+  Pace (min/km): 9.06
+  Avg HR: 144
+  Max HR: 177
+  Calories: 278
+  Avg Cadence: 113.828125
+  Elevation Gain (m): 64.7
+  Z1 (min): 2.18
+  Z2 (min): 14.31
+  Z3 (min): 7.95
+  Z4 (min): 3.68
+  Z5 (min): 0
+  VO2 Max: 
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:30:51 | INFO | P02 |   Sending message with key=running
+2026-05-24 18:30:51 | INFO | P02 |   MESSAGE SENT  sent=7
+2026-05-24 18:30:53 | INFO | P02 | {
+  Activity ID: 21880043348
+  Date: 2026-02-15
+  Activity Name: Honolulu - Tempo
+  Type: running
+  Distance (km): 8.13
+  Duration (min): 60.74
+  Pace (min/km): 7.47
+  Avg HR: 158
+  Max HR: 176
+  Calories: 662
+  Avg Cadence: 144.640625
+  Elevation Gain (m): 88.4
+  Z1 (min): 0.97
+  Z2 (min): 7.39
+  Z3 (min): 20.37
+  Z4 (min): 31.68
+  Z5 (min): 0
+  VO2 Max: 43
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:30:53 | INFO | P02 |   Sending message with key=running
+2026-05-24 18:30:53 | INFO | P02 |   MESSAGE SENT  sent=8
+2026-05-24 18:30:55 | INFO | P02 | {
+  Activity ID: 21860487689
+  Date: 2026-02-13
+  Activity Name: Honolulu - Long Run
+  Type: running
+  Distance (km): 7.92
+  Duration (min): 70.6
+  Pace (min/km): 8.92
+  Avg HR: 151
+  Max HR: 168
+  Calories: 636
+  Avg Cadence: 129.9375
+  Elevation Gain (m): 95.9
+  Z1 (min): 0.65
+  Z2 (min): 11.51
+  Z3 (min): 56.87
+  Z4 (min): 1.58
+  Z5 (min): 0
+  VO2 Max: 43
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:30:55 | INFO | P02 |   Sending message with key=running
+2026-05-24 18:30:55 | INFO | P02 |   MESSAGE SENT  sent=9
+2026-05-24 18:30:57 | INFO | P02 | {
+  Activity ID: 21829475018
+  Date: 2026-02-10
+  Activity Name: Indoor Cycling
+  Type: indoor_cycling
+  Distance (km): 9.66
+  Duration (min): 28.54
+  Pace (min/km): 2.96
+  Avg HR: 134
+  Max HR: 168
+  Calories: 251
+  Avg Cadence: 0
+  Elevation Gain (m): 0
+  Z1 (min): 2.27
+  Z2 (min): 24.41
+  Z3 (min): 1.42
+  Z4 (min): 0.43
+  Z5 (min): 0
+  VO2 Max: 
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:30:57 | INFO | P02 |   Sending message with key=indoor_cycling
+2026-05-24 18:30:57 | INFO | P02 |   MESSAGE SENT  sent=10
+2026-05-24 18:30:59 | INFO | P02 | {
+  Activity ID: 21808906486
+  Date: 2026-02-08
+  Activity Name: Honolulu - Base
+  Type: running
+  Distance (km): 6.23
+  Duration (min): 53
+  Pace (min/km): 8.5
+  Avg HR: 148
+  Max HR: 163
+  Calories: 504
+  Avg Cadence: 141.28125
+  Elevation Gain (m): 75.8
+  Z1 (min): 1.51
+  Z2 (min): 10.69
+  Z3 (min): 40.42
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 43
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:30:59 | INFO | P02 |   Sending message with key=running
+2026-05-24 18:30:59 | INFO | P02 |   MESSAGE SENT  sent=11
+2026-05-24 18:31:01 | INFO | P02 | {
+  Activity ID: 21755172774
+  Date: 2026-02-03
+  Activity Name: Honolulu Multisport
+  Type: multi_sport
+  Distance (km): 4.45
+  Duration (min): 80.45
+  Pace (min/km): 18.07
+  Avg HR: 0
+  Max HR: 140
+  Calories: 544
+  Avg Cadence: 0
+  Elevation Gain (m): 75
+  Z1 (min): 0
+  Z2 (min): 0
+  Z3 (min): 0
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:31:01 | INFO | P02 |   Sending message with key=multi_sport
+2026-05-24 18:31:01 | INFO | P02 |   MESSAGE SENT  sent=12
+2026-05-24 18:31:03 | INFO | P02 | {
+  Activity ID: 21734813204
+  Date: 2026-02-01
+  Activity Name: Honolulu - Base
+  Type: running
+  Distance (km): 4.52
+  Duration (min): 35.19
+  Pace (min/km): 7.79
+  Avg HR: 144
+  Max HR: 159
+  Calories: 367
+  Avg Cadence: 144.015625
+  Elevation Gain (m): 50.8
+  Z1 (min): 1.48
+  Z2 (min): 12.8
+  Z3 (min): 20.47
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 43
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:31:03 | INFO | P02 |   Sending message with key=running
+2026-05-24 18:31:03 | INFO | P02 |   MESSAGE SENT  sent=13
+2026-05-24 18:31:05 | INFO | P02 | {
+  Activity ID: 21724351150
+  Date: 2026-01-31
+  Activity Name: Honolulu Walking
+  Type: walking
+  Distance (km): 1.58
+  Duration (min): 20.39
+  Pace (min/km): 12.94
+  Avg HR: 111
+  Max HR: 130
+  Calories: 126
+  Avg Cadence: 76.734375
+  Elevation Gain (m): 23.1
+  Z1 (min): 15.27
+  Z2 (min): 1
+  Z3 (min): 0
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 43
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:31:05 | INFO | P02 |   Sending message with key=walking
+2026-05-24 18:31:05 | INFO | P02 |   MESSAGE SENT  sent=14
+2026-05-24 18:31:07 | INFO | P02 | {
+  Activity ID: 21694554359
+  Date: 2026-01-28
+  Activity Name: Honolulu - Hill sprints 10*15s
+  Type: running
+  Distance (km): 3.68
+  Duration (min): 31.2
+  Pace (min/km): 8.48
+  Avg HR: 144
+  Max HR: 177
+  Calories: 320
+  Avg Cadence: 135.390625
+  Elevation Gain (m): 65.7
+  Z1 (min): 3.67
+  Z2 (min): 11.78
+  Z3 (min): 10.39
+  Z4 (min): 4.99
+  Z5 (min): 0
+  VO2 Max: 43
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:31:07 | INFO | P02 |   Sending message with key=running
+2026-05-24 18:31:08 | INFO | P02 |   MESSAGE SENT  sent=15
+2026-05-24 18:31:10 | INFO | P02 | {
+  Activity ID: 21683561200
+  Date: 2026-01-27
+  Activity Name: Honolulu - Base
+  Type: running
+  Distance (km): 6.4
+  Duration (min): 49.14
+  Pace (min/km): 7.67
+  Avg HR: 149
+  Max HR: 164
+  Calories: 528
+  Avg Cadence: 146.609375
+  Elevation Gain (m): 55.1
+  Z1 (min): 1.54
+  Z2 (min): 7.78
+  Z3 (min): 39.38
+  Z4 (min): 0.12
+  Z5 (min): 0
+  VO2 Max: 43
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:31:10 | INFO | P02 |   Sending message with key=running
+2026-05-24 18:31:10 | INFO | P02 |   MESSAGE SENT  sent=16
+2026-05-24 18:31:12 | INFO | P02 | {
+  Activity ID: 21663871750
+  Date: 2026-01-25
+  Activity Name: Honolulu - Base
+  Type: running
+  Distance (km): 3.66
+  Duration (min): 28.95
+  Pace (min/km): 7.9
+  Avg HR: 142
+  Max HR: 157
+  Calories: 292
+  Avg Cadence: 145.34375
+  Elevation Gain (m): 39.2
+  Z1 (min): 1.37
+  Z2 (min): 14.95
+  Z3 (min): 12.33
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 43
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:31:12 | INFO | P02 |   Sending message with key=running
+2026-05-24 18:31:12 | INFO | P02 |   MESSAGE SENT  sent=17
+2026-05-24 18:31:14 | INFO | P02 | {
+  Activity ID: 21652909277
+  Date: 2026-01-24
+  Activity Name: Magic Island Biathlon (Run-Swim)
+  Type: multi_sport
+  Distance (km): 5.72
+  Duration (min): 45.79
+  Pace (min/km): 8
+  Avg HR: 0
+  Max HR: 184
+  Calories: 599
+  Avg Cadence: 0
+  Elevation Gain (m): 8.7
+  Z1 (min): 0
+  Z2 (min): 0
+  Z3 (min): 0
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:31:14 | INFO | P02 |   Sending message with key=multi_sport
+2026-05-24 18:31:14 | INFO | P02 |   MESSAGE SENT  sent=18
+2026-05-24 18:31:16 | INFO | P02 | {
+  Activity ID: 21613974412
+  Date: 2026-01-20
+  Activity Name: Ka'ena Ruck 
+  Type: hiking
+  Distance (km): 10.21
+  Duration (min): 224.41
+  Pace (min/km): 21.97
+  Avg HR: 101
+  Max HR: 134
+  Calories: 910
+  Avg Cadence: 51.734375
+  Elevation Gain (m): 117.6
+  Z1 (min): 91.88
+  Z2 (min): 4.7
+  Z3 (min): 0
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:31:16 | INFO | P02 |   Sending message with key=hiking
+2026-05-24 18:31:16 | INFO | P02 |   MESSAGE SENT  sent=19
+2026-05-24 18:31:18 | INFO | P02 | {
+  Activity ID: 21603388008
+  Date: 2026-01-19
+  Activity Name: Honolulu Surfing
+  Type: surfing_v2
+  Distance (km): 1.55
+  Duration (min): 48.11
+  Pace (min/km): 31.04
+  Avg HR: 111
+  Max HR: 164
+  Calories: 270
+  Avg Cadence: 0
+  Elevation Gain (m): 0
+  Z1 (min): 17.17
+  Z2 (min): 7.52
+  Z3 (min): 4.43
+  Z4 (min): 0.02
+  Z5 (min): 0
+  VO2 Max: 
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:31:18 | INFO | P02 |   Sending message with key=surfing_v2
+2026-05-24 18:31:18 | INFO | P02 |   MESSAGE SENT  sent=20
+2026-05-24 18:31:18 | DEBUG | C02 | KAFKA_BOOTSTRAP_SERVERS           = localhost:9092
+2026-05-24 18:31:18 | DEBUG | C02 | KAFKA_BROKER_ADDRESS_FAMILY       = v6
+2026-05-24 18:31:18 | DEBUG | C02 | KAFKA_TOPIC                       = streaming-02-kafka-garmin
+2026-05-24 18:31:18 | DEBUG | C02 | KAFKA_CLEAR_TOPIC_ON_START        = true
+2026-05-24 18:31:18 | DEBUG | C02 | PRODUCER_MESSAGE_COUNT            = 100
+2026-05-24 18:31:18 | DEBUG | C02 | PRODUCER_MESSAGE_INTERVAL_SECONDS = 2
+2026-05-24 18:31:18 | DEBUG | C02 | PRODUCER_MAX_MESSAGES             = 100
+2026-05-24 18:31:18 | DEBUG | C02 | PRODUCER_POLL_INTERVAL_SECONDS    = 15
+2026-05-24 18:31:18 | DEBUG | C02 | KAFKA_GROUP_ID                    = streaming-consumer-group-A
+2026-05-24 18:31:18 | DEBUG | C02 | KAFKA_AUTO_OFFSET_RESET           = earliest
+2026-05-24 18:31:18 | DEBUG | C02 | CONSUMER_TIMEOUT_SECONDS          = 10
+2026-05-24 18:31:18 | DEBUG | C02 | CONSUMER_MAX_MESSAGES             = 1000
+2026-05-24 18:31:18 | INFO | C02 | === RUN START ===
+2026-05-24 18:31:18 | INFO | C02 | project=C02
+2026-05-24 18:31:18 | INFO | C02 | repo_dir=streaming-02-kafka
+2026-05-24 18:31:18 | INFO | C02 | python=3.14.5
+2026-05-24 18:31:18 | INFO | C02 | os=Windows 11
+2026-05-24 18:31:18 | INFO | C02 | shell=powershell
+2026-05-24 18:31:18 | INFO | C02 | cwd=.
+2026-05-24 18:31:18 | INFO | C02 | github_actions=False
+2026-05-24 18:31:18 | INFO | C02 | ========================
+2026-05-24 18:31:18 | INFO | C02 | START consumer main()
+2026-05-24 18:31:18 | INFO | C02 | ========================
+2026-05-24 18:31:18 | INFO | C02 | ROOT_DIR = .
+2026-05-24 18:31:18 | INFO | C02 | DATA_DIR = data
+2026-05-24 18:31:18 | INFO | C02 | OUTPUT_CSV = data\output\consumed_sales_critical_section.csv
+2026-05-24 18:31:18 | INFO | C02 | ========================
+2026-05-24 18:31:18 | INFO | C02 | SECTION A. Acquire
+2026-05-24 18:31:18 | INFO | C02 | ========================
+2026-05-24 18:31:18 | INFO | C02 | Loading settings from .env...
+2026-05-24 18:31:18 | INFO | C02 | KAFKA_BOOTSTRAP_SERVERS  = localhost:9092
+2026-05-24 18:31:18 | INFO | C02 | KAFKA_TOPIC              = streaming-02-kafka-garmin
+2026-05-24 18:31:18 | INFO | C02 | KAFKA_GROUP_ID           = streaming-consumer-group-A
+2026-05-24 18:31:18 | INFO | C02 | CONSUMER_TIMEOUT_SECONDS = 10.0
+2026-05-24 18:31:18 | INFO | C02 | CONSUMER_MAX_MESSAGES    = 1000
+2026-05-24 18:31:18 | INFO | C02 | Verifying Kafka connection...
+2026-05-24 18:31:18 | INFO | C02 | Kafka port is reachable.
+2026-05-24 18:31:18 | INFO | C02 | Verifying Kafka topic...
+2026-05-24 18:31:20 | INFO | P02 | {
+  Activity ID: 21599892014
+  Date: 2026-01-19
+  Activity Name: Morning Run with Michael
+  Type: running
+  Distance (km): 4.55
+  Duration (min): 35.23
+  Pace (min/km): 7.74
+  Avg HR: 153
+  Max HR: 165
+  Calories: 379
+  Avg Cadence: 142.90625
+  Elevation Gain (m): 49.5
+  Z1 (min): 1.26
+  Z2 (min): 3.35
+  Z3 (min): 29.85
+  Z4 (min): 0.58
+  Z5 (min): 0
+  VO2 Max: 42
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:31:20 | INFO | P02 |   Sending message with key=running
+2026-05-24 18:31:20 | INFO | P02 |   MESSAGE SENT  sent=21
+2026-05-24 18:31:21 | INFO | C02 | Topic 'streaming-02-kafka-garmin' exists.
+2026-05-24 18:31:21 | INFO | C02 | Found 21 message(s) available.
+2026-05-24 18:31:21 | INFO | C02 | Creating Kafka consumer...
+2026-05-24 18:31:21 | INFO | C02 | Subscribed to topic: 'streaming-02-kafka-garmin' (reading from beginning)
+2026-05-24 18:31:21 | INFO | C02 | ========================
+2026-05-24 18:31:21 | INFO | C02 | SECTION C. Consume and Process Messages
+2026-05-24 18:31:21 | INFO | C02 | ========================
+2026-05-24 18:31:21 | INFO | C02 | Initializing output...
+2026-05-24 18:31:21 | INFO | C02 | Output CSV cleared: consumed_sales_critical_section.csv
+2026-05-24 18:31:21 | INFO | C02 | Consuming messages...
+2026-05-24 18:31:21 | INFO | C02 | Waiting for up to 1000 message(s).
+2026-05-24 18:31:21 | INFO | C02 | Press CTRL+C to stop early.
+
+2026-05-24 18:31:22 | INFO | P02 | {
+  Activity ID: 21561680912
+  Date: 2026-01-15
+  Activity Name: Maui County Open Water Swimming
+  Type: open_water_swimming
+  Distance (km): 0.66
+  Duration (min): 26.36
+  Pace (min/km): 39.67
+  Avg HR: 91
+  Max HR: 134
+  Calories: 108
+  Avg Cadence: 0
+  Elevation Gain (m): 0
+  Z1 (min): 4.7
+  Z2 (min): 2.15
+  Z3 (min): 0
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:31:22 | INFO | P02 |   Sending message with key=open_water_swimming
+2026-05-24 18:31:22 | INFO | P02 |   MESSAGE SENT  sent=22
+2026-05-24 18:31:24 | INFO | P02 | {
+  Activity ID: 21551109690
+  Date: 2026-01-14
+  Activity Name: Maui County Walking
+  Type: walking
+  Distance (km): 1.22
+  Duration (min): 36.03
+  Pace (min/km): 29.51
+  Avg HR: 90
+  Max HR: 122
+  Calories: 129
+  Avg Cadence: 35.578125
+  Elevation Gain (m): 30.8
+  Z1 (min): 5.13
+  Z2 (min): 0
+  Z3 (min): 0
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 42
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:31:24 | INFO | P02 |   Sending message with key=walking
+2026-05-24 18:31:24 | INFO | P02 |   MESSAGE SENT  sent=23
+2026-05-24 18:31:26 | INFO | P02 | {
+  Activity ID: 21549658299
+  Date: 2026-01-14
+  Activity Name: Molokini Crater Open Water Swimming
+  Type: open_water_swimming
+  Distance (km): 1.44
+  Duration (min): 95.11
+  Pace (min/km): 66.24
+  Avg HR: 97
+  Max HR: 136
+  Calories: 401
+  Avg Cadence: 0
+  Elevation Gain (m): 0
+  Z1 (min): 21.63
+  Z2 (min): 6.22
+  Z3 (min): 0
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:31:26 | INFO | P02 |   Sending message with key=open_water_swimming
+2026-05-24 18:31:26 | INFO | P02 |   MESSAGE SENT  sent=24
+2026-05-24 18:31:27 | INFO | C02 | {'Activity ID': '21965542196', 'Activity Name': 'Honolulu - W01D1-Easy Run', 'Avg Cadence': '98', 'Avg HR': '96', 'Avg Stress': '', 'Calories': '249', 'Date': '2026-02-23', 'Distance (km)': '3.46', 'Duration (min)': '41.47', 'Elevation Gain (m)': '49.4', 'End Stress': '', 'Max HR': '119', 'Max Stress': '', 'Pace (min/km)': '11.99', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '', 'Z1 (min)': '9.2', 'Z2 (min)': '0', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 0}
+2026-05-24 18:31:27 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:27 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:27 | INFO | C02 | consumed=1
+2026-05-24 18:31:27 | INFO | C02 | {'Activity ID': '21954265312', 'Activity Name': 'Honolulu Walking', 'Avg Cadence': '87.796875', 'Avg HR': '128', 'Avg Stress': '', 'Calories': '163', 'Date': '2026-02-22', 'Distance (km)': '1.99', 'Duration (min)': '21.54', 'Elevation Gain (m)': '33', 'End Stress': '', 'Max HR': '147', 'Max Stress': '', 'Pace (min/km)': '10.84', 'Start Stress': '', 'Stress Diff': '', 'Type': 'walking', 'VO2 Max': '43', 'Z1 (min)': '7.32', 'Z2 (min)': '13.87', 'Z3 (min)': '0.35', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'walking', '_kafka_partition': 0, '_kafka_offset': 1}
+2026-05-24 18:31:27 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:27 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:27 | INFO | C02 | consumed=2
+2026-05-24 18:31:27 | INFO | C02 | {'Activity ID': '21943859743', 'Activity Name': 'Coherence', 'Avg Cadence': '0', 'Avg HR': '94', 'Avg Stress': '70', 'Calories': '0', 'Date': '2026-02-21', 'Distance (km)': '0', 'Duration (min)': '15.57', 'Elevation Gain (m)': '0', 'End Stress': '60', 'Max HR': '107', 'Max Stress': '83', 'Pace (min/km)': '0', 'Start Stress': '83', 'Stress Diff': '-23', 'Type': 'breathwork', 'VO2 Max': '', 'Z1 (min)': '0.91', 'Z2 (min)': '0', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'breathwork', '_kafka_partition': 0, '_kafka_offset': 2}
+2026-05-24 18:31:27 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:27 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:27 | INFO | C02 | consumed=3
+2026-05-24 18:31:27 | INFO | C02 | {'Activity ID': '21943770023', 'Activity Name': 'Honolulu - Base', 'Avg Cadence': '139.703125', 'Avg HR': '150', 'Avg Stress': '', 'Calories': '402', 'Date': '2026-02-21', 'Distance (km)': '5.11', 'Duration (min)': '44.79', 'Elevation Gain (m)': '56.8', 'End Stress': '', 'Max HR': '164', 'Max Stress': '', 'Pace (min/km)': '8.77', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '43', 'Z1 (min)': '1.35', 'Z2 (min)': '6.13', 'Z3 (min)': '37.28', 'Z4 (min)': '0.02', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 3}
+2026-05-24 18:31:27 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:27 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:27 | INFO | C02 | consumed=4
+2026-05-24 18:31:27 | INFO | C02 | {'Activity ID': '21921828818', 'Activity Name': 'Honolulu - Base', 'Avg Cadence': '136.171875', 'Avg HR': '146', 'Avg Stress': '', 'Calories': '328', 'Date': '2026-02-19', 'Distance (km)': '4.05', 'Duration (min)': '33.09', 'Elevation Gain (m)': '50.7', 'End Stress': '', 'Max HR': '160', 'Max Stress': '', 'Pace (min/km)': '8.18', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '43', 'Z1 (min)': '1.52', 'Z2 (min)': '6.83', 'Z3 (min)': '24.23', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 4}
+2026-05-24 18:31:27 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:27 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:27 | INFO | C02 | consumed=5
+2026-05-24 18:31:27 | INFO | C02 | {'Activity ID': '21892130373', 'Activity Name': 'Rucking the dog ', 'Avg Cadence': '77.296875', 'Avg HR': '114', 'Avg Stress': '', 'Calories': '167', 'Date': '2026-02-16', 'Distance (km)': '1.98', 'Duration (min)': '26.06', 'Elevation Gain (m)': '31.7', 'End Stress': '', 'Max HR': '151', 'Max Stress': '', 'Pace (min/km)': '13.17', 'Start Stress': '', 'Stress Diff': '', 'Type': 'walking', 'VO2 Max': '43', 'Z1 (min)': '12.23', 'Z2 (min)': '5.88', 'Z3 (min)': '1.27', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'walking', '_kafka_partition': 0, '_kafka_offset': 5}
+2026-05-24 18:31:27 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:27 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:27 | INFO | C02 | consumed=6
+2026-05-24 18:31:27 | INFO | C02 | {'Activity ID': '21889719484', 'Activity Name': 'Honolulu - Hill sprints 10*15s', 'Avg Cadence': '113.828125', 'Avg HR': '144', 'Avg Stress': '', 'Calories': '278', 'Date': '2026-02-16', 'Distance (km)': '3.17', 'Duration (min)': '28.72', 'Elevation Gain (m)': '64.7', 'End Stress': '', 'Max HR': '177', 'Max Stress': '', 'Pace (min/km)': '9.06', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '', 'Z1 (min)': '2.18', 'Z2 (min)': '14.31', 'Z3 (min)': '7.95', 'Z4 (min)': '3.68', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 6}
+2026-05-24 18:31:27 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:27 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:27 | INFO | C02 | consumed=7
+2026-05-24 18:31:27 | INFO | C02 | {'Activity ID': '21880043348', 'Activity Name': 'Honolulu - Tempo', 'Avg Cadence': '144.640625', 'Avg HR': '158', 'Avg Stress': '', 'Calories': '662', 'Date': '2026-02-15', 'Distance (km)': '8.13', 'Duration (min)': '60.74', 'Elevation Gain (m)': '88.4', 'End Stress': '', 'Max HR': '176', 'Max Stress': '', 'Pace (min/km)': '7.47', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '43', 'Z1 (min)': '0.97', 'Z2 (min)': '7.39', 'Z3 (min)': '20.37', 'Z4 (min)': '31.68', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 7}
+2026-05-24 18:31:27 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:27 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:27 | INFO | C02 | consumed=8
+2026-05-24 18:31:27 | INFO | C02 | {'Activity ID': '21860487689', 'Activity Name': 'Honolulu - Long Run', 'Avg Cadence': '129.9375', 'Avg HR': '151', 'Avg Stress': '', 'Calories': '636', 'Date': '2026-02-13', 'Distance (km)': '7.92', 'Duration (min)': '70.6', 'Elevation Gain (m)': '95.9', 'End Stress': '', 'Max HR': '168', 'Max Stress': '', 'Pace (min/km)': '8.92', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '43', 'Z1 (min)': '0.65', 'Z2 (min)': '11.51', 'Z3 (min)': '56.87', 'Z4 (min)': '1.58', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 8}
+2026-05-24 18:31:27 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:27 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:27 | INFO | C02 | consumed=9
+2026-05-24 18:31:27 | INFO | C02 | {'Activity ID': '21829475018', 'Activity Name': 'Indoor Cycling', 'Avg Cadence': '0', 'Avg HR': '134', 'Avg Stress': '', 'Calories': '251', 'Date': '2026-02-10', 'Distance (km)': '9.66', 'Duration (min)': '28.54', 'Elevation Gain (m)': '0', 'End Stress': '', 'Max HR': '168', 'Max Stress': '', 'Pace (min/km)': '2.96', 'Start Stress': '', 'Stress Diff': '', 'Type': 'indoor_cycling', 'VO2 Max': '', 'Z1 (min)': '2.27', 'Z2 (min)': '24.41', 'Z3 (min)': '1.42', 'Z4 (min)': '0.43', 'Z5 (min)': '0', '_kafka_key': 'indoor_cycling', '_kafka_partition': 0, '_kafka_offset': 9}
+2026-05-24 18:31:27 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:27 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:27 | INFO | C02 | consumed=10
+2026-05-24 18:31:27 | INFO | C02 | {'Activity ID': '21808906486', 'Activity Name': 'Honolulu - Base', 'Avg Cadence': '141.28125', 'Avg HR': '148', 'Avg Stress': '', 'Calories': '504', 'Date': '2026-02-08', 'Distance (km)': '6.23', 'Duration (min)': '53', 'Elevation Gain (m)': '75.8', 'End Stress': '', 'Max HR': '163', 'Max Stress': '', 'Pace (min/km)': '8.5', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '43', 'Z1 (min)': '1.51', 'Z2 (min)': '10.69', 'Z3 (min)': '40.42', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 10}
+2026-05-24 18:31:27 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:27 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:27 | INFO | C02 | consumed=11
+2026-05-24 18:31:27 | INFO | C02 | {'Activity ID': '21755172774', 'Activity Name': 'Honolulu Multisport', 'Avg Cadence': '0', 'Avg HR': '0', 'Avg Stress': '', 'Calories': '544', 'Date': '2026-02-03', 'Distance (km)': '4.45', 'Duration (min)': '80.45', 'Elevation Gain (m)': '75', 'End Stress': '', 'Max HR': '140', 'Max Stress': '', 'Pace (min/km)': '18.07', 'Start Stress': '', 'Stress Diff': '', 'Type': 'multi_sport', 'VO2 Max': '', 'Z1 (min)': '0', 'Z2 (min)': '0', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'multi_sport', '_kafka_partition': 0, '_kafka_offset': 11}
+2026-05-24 18:31:27 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:27 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:27 | INFO | C02 | consumed=12
+2026-05-24 18:31:27 | INFO | C02 | {'Activity ID': '21734813204', 'Activity Name': 'Honolulu - Base', 'Avg Cadence': '144.015625', 'Avg HR': '144', 'Avg Stress': '', 'Calories': '367', 'Date': '2026-02-01', 'Distance (km)': '4.52', 'Duration (min)': '35.19', 'Elevation Gain (m)': '50.8', 'End Stress': '', 'Max HR': '159', 'Max Stress': '', 'Pace (min/km)': '7.79', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '43', 'Z1 (min)': '1.48', 'Z2 (min)': '12.8', 'Z3 (min)': '20.47', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 12}
+2026-05-24 18:31:27 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:27 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:27 | INFO | C02 | consumed=13
+2026-05-24 18:31:27 | INFO | C02 | {'Activity ID': '21724351150', 'Activity Name': 'Honolulu Walking', 'Avg Cadence': '76.734375', 'Avg HR': '111', 'Avg Stress': '', 'Calories': '126', 'Date': '2026-01-31', 'Distance (km)': '1.58', 'Duration (min)': '20.39', 'Elevation Gain (m)': '23.1', 'End Stress': '', 'Max HR': '130', 'Max Stress': '', 'Pace (min/km)': '12.94', 'Start Stress': '', 'Stress Diff': '', 'Type': 'walking', 'VO2 Max': '43', 'Z1 (min)': '15.27', 'Z2 (min)': '1', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'walking', '_kafka_partition': 0, '_kafka_offset': 13}
+2026-05-24 18:31:27 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:27 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:27 | INFO | C02 | consumed=14
+2026-05-24 18:31:27 | INFO | C02 | {'Activity ID': '21694554359', 'Activity Name': 'Honolulu - Hill sprints 10*15s', 'Avg Cadence': '135.390625', 'Avg HR': '144', 'Avg Stress': '', 'Calories': '320', 'Date': '2026-01-28', 'Distance (km)': '3.68', 'Duration (min)': '31.2', 'Elevation Gain (m)': '65.7', 'End Stress': '', 'Max HR': '177', 'Max Stress': '', 'Pace (min/km)': '8.48', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '43', 'Z1 (min)': '3.67', 'Z2 (min)': '11.78', 'Z3 (min)': '10.39', 'Z4 (min)': '4.99', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 14}
+2026-05-24 18:31:27 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:27 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:27 | INFO | C02 | consumed=15
+2026-05-24 18:31:27 | INFO | C02 | {'Activity ID': '21683561200', 'Activity Name': 'Honolulu - Base', 'Avg Cadence': '146.609375', 'Avg HR': '149', 'Avg Stress': '', 'Calories': '528', 'Date': '2026-01-27', 'Distance (km)': '6.4', 'Duration (min)': '49.14', 'Elevation Gain (m)': '55.1', 'End Stress': '', 'Max HR': '164', 'Max Stress': '', 'Pace (min/km)': '7.67', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '43', 'Z1 (min)': '1.54', 'Z2 (min)': '7.78', 'Z3 (min)': '39.38', 'Z4 (min)': '0.12', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 15}
+2026-05-24 18:31:27 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:27 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:27 | INFO | C02 | consumed=16
+2026-05-24 18:31:27 | INFO | C02 | {'Activity ID': '21663871750', 'Activity Name': 'Honolulu - Base', 'Avg Cadence': '145.34375', 'Avg HR': '142', 'Avg Stress': '', 'Calories': '292', 'Date': '2026-01-25', 'Distance (km)': '3.66', 'Duration (min)': '28.95', 'Elevation Gain (m)': '39.2', 'End Stress': '', 'Max HR': '157', 'Max Stress': '', 'Pace (min/km)': '7.9', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '43', 'Z1 (min)': '1.37', 'Z2 (min)': '14.95', 'Z3 (min)': '12.33', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 16}
+2026-05-24 18:31:27 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:27 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:27 | INFO | C02 | consumed=17
+2026-05-24 18:31:27 | INFO | C02 | {'Activity ID': '21652909277', 'Activity Name': 'Magic Island Biathlon (Run-Swim)', 'Avg Cadence': '0', 'Avg HR': '0', 'Avg Stress': '', 'Calories': '599', 'Date': '2026-01-24', 'Distance (km)': '5.72', 'Duration (min)': '45.79', 'Elevation Gain (m)': '8.7', 'End Stress': '', 'Max HR': '184', 'Max Stress': '', 'Pace (min/km)': '8', 'Start Stress': '', 'Stress Diff': '', 'Type': 'multi_sport', 'VO2 Max': '', 'Z1 (min)': '0', 'Z2 (min)': '0', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'multi_sport', '_kafka_partition': 0, '_kafka_offset': 17}
+2026-05-24 18:31:27 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:27 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:27 | INFO | C02 | consumed=18
+2026-05-24 18:31:27 | INFO | C02 | {'Activity ID': '21613974412', 'Activity Name': "Ka'ena Ruck ", 'Avg Cadence': '51.734375', 'Avg HR': '101', 'Avg Stress': '', 'Calories': '910', 'Date': '2026-01-20', 'Distance (km)': '10.21', 'Duration (min)': '224.41', 'Elevation Gain (m)': '117.6', 'End Stress': '', 'Max HR': '134', 'Max Stress': '', 'Pace (min/km)': '21.97', 'Start Stress': '', 'Stress Diff': '', 'Type': 'hiking', 'VO2 Max': '', 'Z1 (min)': '91.88', 'Z2 (min)': '4.7', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'hiking', '_kafka_partition': 0, '_kafka_offset': 18}
+2026-05-24 18:31:27 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:27 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:27 | INFO | C02 | consumed=19
+2026-05-24 18:31:27 | INFO | C02 | {'Activity ID': '21603388008', 'Activity Name': 'Honolulu Surfing', 'Avg Cadence': '0', 'Avg HR': '111', 'Avg Stress': '', 'Calories': '270', 'Date': '2026-01-19', 'Distance (km)': '1.55', 'Duration (min)': '48.11', 'Elevation Gain (m)': '0', 'End Stress': '', 'Max HR': '164', 'Max Stress': '', 'Pace (min/km)': '31.04', 'Start Stress': '', 'Stress Diff': '', 'Type': 'surfing_v2', 'VO2 Max': '', 'Z1 (min)': '17.17', 'Z2 (min)': '7.52', 'Z3 (min)': '4.43', 'Z4 (min)': '0.02', 'Z5 (min)': '0', '_kafka_key': 'surfing_v2', '_kafka_partition': 0, '_kafka_offset': 19}
+2026-05-24 18:31:27 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:27 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:27 | INFO | C02 | consumed=20
+2026-05-24 18:31:27 | INFO | C02 | {'Activity ID': '21599892014', 'Activity Name': 'Morning Run with Michael', 'Avg Cadence': '142.90625', 'Avg HR': '153', 'Avg Stress': '', 'Calories': '379', 'Date': '2026-01-19', 'Distance (km)': '4.55', 'Duration (min)': '35.23', 'Elevation Gain (m)': '49.5', 'End Stress': '', 'Max HR': '165', 'Max Stress': '', 'Pace (min/km)': '7.74', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '42', 'Z1 (min)': '1.26', 'Z2 (min)': '3.35', 'Z3 (min)': '29.85', 'Z4 (min)': '0.58', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 20}
+2026-05-24 18:31:27 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:27 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:27 | INFO | C02 | consumed=21
+2026-05-24 18:31:27 | INFO | C02 | {'Activity ID': '21561680912', 'Activity Name': 'Maui County Open Water Swimming', 'Avg Cadence': '0', 'Avg HR': '91', 'Avg Stress': '', 'Calories': '108', 'Date': '2026-01-15', 'Distance (km)': '0.66', 'Duration (min)': '26.36', 'Elevation Gain (m)': '0', 'End Stress': '', 'Max HR': '134', 'Max Stress': '', 'Pace (min/km)': '39.67', 'Start Stress': '', 'Stress Diff': '', 'Type': 'open_water_swimming', 'VO2 Max': '', 'Z1 (min)': '4.7', 'Z2 (min)': '2.15', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'open_water_swimming', '_kafka_partition': 0, '_kafka_offset': 21}
+2026-05-24 18:31:27 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:27 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:27 | INFO | C02 | consumed=22
+2026-05-24 18:31:27 | INFO | C02 | {'Activity ID': '21551109690', 'Activity Name': 'Maui County Walking', 'Avg Cadence': '35.578125', 'Avg HR': '90', 'Avg Stress': '', 'Calories': '129', 'Date': '2026-01-14', 'Distance (km)': '1.22', 'Duration (min)': '36.03', 'Elevation Gain (m)': '30.8', 'End Stress': '', 'Max HR': '122', 'Max Stress': '', 'Pace (min/km)': '29.51', 'Start Stress': '', 'Stress Diff': '', 'Type': 'walking', 'VO2 Max': '42', 'Z1 (min)': '5.13', 'Z2 (min)': '0', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'walking', '_kafka_partition': 0, '_kafka_offset': 22}
+2026-05-24 18:31:27 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:27 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:27 | INFO | C02 | consumed=23
+2026-05-24 18:31:27 | INFO | C02 | {'Activity ID': '21549658299', 'Activity Name': 'Molokini Crater Open Water Swimming', 'Avg Cadence': '0', 'Avg HR': '97', 'Avg Stress': '', 'Calories': '401', 'Date': '2026-01-14', 'Distance (km)': '1.44', 'Duration (min)': '95.11', 'Elevation Gain (m)': '0', 'End Stress': '', 'Max HR': '136', 'Max Stress': '', 'Pace (min/km)': '66.24', 'Start Stress': '', 'Stress Diff': '', 'Type': 'open_water_swimming', 'VO2 Max': '', 'Z1 (min)': '21.63', 'Z2 (min)': '6.22', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'open_water_swimming', '_kafka_partition': 0, '_kafka_offset': 23}
+2026-05-24 18:31:27 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:27 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:27 | INFO | C02 | consumed=24
+2026-05-24 18:31:28 | INFO | P02 | {
+  Activity ID: 21540021296
+  Date: 2026-01-13
+  Activity Name: Iao Valley Walking
+  Type: walking
+  Distance (km): 1.38
+  Duration (min): 55.19
+  Pace (min/km): 39.93
+  Avg HR: 89
+  Max HR: 119
+  Calories: 182
+  Avg Cadence: 25.1875
+  Elevation Gain (m): 50.1
+  Z1 (min): 7.8
+  Z2 (min): 0
+  Z3 (min): 0
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:31:28 | INFO | P02 |   Sending message with key=walking
+2026-05-24 18:31:28 | INFO | P02 |   MESSAGE SENT  sent=25
+2026-05-24 18:31:28 | INFO | C02 | {'Activity ID': '21540021296', 'Activity Name': 'Iao Valley Walking', 'Avg Cadence': '25.1875', 'Avg HR': '89', 'Avg Stress': '', 'Calories': '182', 'Date': '2026-01-13', 'Distance (km)': '1.38', 'Duration (min)': '55.19', 'Elevation Gain (m)': '50.1', 'End Stress': '', 'Max HR': '119', 'Max Stress': '', 'Pace (min/km)': '39.93', 'Start Stress': '', 'Stress Diff': '', 'Type': 'walking', 'VO2 Max': '', 'Z1 (min)': '7.8', 'Z2 (min)': '0', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'walking', '_kafka_partition': 0, '_kafka_offset': 24}
+2026-05-24 18:31:28 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:28 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:28 | INFO | C02 | consumed=25
+2026-05-24 18:31:30 | INFO | P02 | {
+  Activity ID: 21537704513
+  Date: 2026-01-13
+  Activity Name: Olowalu Open Water Swimming
+  Type: open_water_swimming
+  Distance (km): 1.28
+  Duration (min): 54.62
+  Pace (min/km): 42.76
+  Avg HR: 109
+  Max HR: 154
+  Calories: 314
+  Avg Cadence: 0
+  Elevation Gain (m): 0
+  Z1 (min): 25.19
+  Z2 (min): 6.68
+  Z3 (min): 1.72
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:31:30 | INFO | P02 |   Sending message with key=open_water_swimming
+2026-05-24 18:31:30 | INFO | P02 |   MESSAGE SENT  sent=26
+2026-05-24 18:31:30 | INFO | C02 | {'Activity ID': '21537704513', 'Activity Name': 'Olowalu Open Water Swimming', 'Avg Cadence': '0', 'Avg HR': '109', 'Avg Stress': '', 'Calories': '314', 'Date': '2026-01-13', 'Distance (km)': '1.28', 'Duration (min)': '54.62', 'Elevation Gain (m)': '0', 'End Stress': '', 'Max HR': '154', 'Max Stress': '', 'Pace (min/km)': '42.76', 'Start Stress': '', 'Stress Diff': '', 'Type': 'open_water_swimming', 'VO2 Max': '', 'Z1 (min)': '25.19', 'Z2 (min)': '6.68', 'Z3 (min)': '1.72', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'open_water_swimming', '_kafka_partition': 0, '_kafka_offset': 25}
+2026-05-24 18:31:30 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:30 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:30 | INFO | C02 | consumed=26
+2026-05-24 18:31:32 | INFO | C02 | Kafka consumer closed.
+2026-05-24 18:31:32 | INFO | P02 | {
+  Activity ID: 21525046427
+  Date: 2026-01-12
+  Activity Name: Honolulu - Base
+  Type: running
+  Distance (km): 3.54
+  Duration (min): 29.26
+  Pace (min/km): 8.26
+  Avg HR: 138
+  Max HR: 153
+  Calories: 281
+  Avg Cadence: 140.640625
+  Elevation Gain (m): 59.9
+  Z1 (min): 2.11
+  Z2 (min): 24.88
+  Z3 (min): 2.05
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:31:32 | INFO | P02 |   Sending message with key=running
+2026-05-24 18:31:32 | INFO | P02 |   MESSAGE SENT  sent=27
+2026-05-24 18:31:34 | INFO | P02 | {
+  Activity ID: 21516398959
+  Date: 2026-01-11
+  Activity Name: Honolulu - Base
+  Type: running
+  Distance (km): 7.15
+  Duration (min): 62.17
+  Pace (min/km): 8.69
+  Avg HR: 141
+  Max HR: 181
+  Calories: 559
+  Avg Cadence: 135.21875
+  Elevation Gain (m): 77.9
+  Z1 (min): 3.97
+  Z2 (min): 45.07
+  Z3 (min): 10.5
+  Z4 (min): 2.56
+  Z5 (min): 0
+  VO2 Max: 42
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:31:34 | INFO | P02 |   Sending message with key=running
+2026-05-24 18:31:34 | INFO | P02 |   MESSAGE SENT  sent=28
+2026-05-24 18:31:36 | INFO | P02 | {
+  Activity ID: 21496077788
+  Date: 2026-01-09
+  Activity Name: Pool Swim
+  Type: lap_swimming
+  Distance (km): 1.5
+  Duration (min): 46.15
+  Pace (min/km): 30.77
+  Avg HR: 127
+  Max HR: 165
+  Calories: 369
+  Avg Cadence: 0
+  Elevation Gain (m): 0
+  Z1 (min): 12.65
+  Z2 (min): 19.98
+  Z3 (min): 7.1
+  Z4 (min): 0.07
+  Z5 (min): 0
+  VO2 Max: 
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:31:36 | INFO | P02 |   Sending message with key=lap_swimming
+2026-05-24 18:31:36 | INFO | P02 |   MESSAGE SENT  sent=29
+2026-05-24 18:31:38 | INFO | P02 | {
+  Activity ID: 21488467760
+  Date: 2026-01-08
+  Activity Name: Honolulu Running
+  Type: running
+  Distance (km): 3.31
+  Duration (min): 27.6
+  Pace (min/km): 8.35
+  Avg HR: 137
+  Max HR: 155
+  Calories: 262
+  Avg Cadence: 134
+  Elevation Gain (m): 42.1
+  Z1 (min): 5.01
+  Z2 (min): 11.8
+  Z3 (min): 10.48
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 42
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:31:38 | INFO | P02 |   Sending message with key=running
+2026-05-24 18:31:38 | INFO | P02 |   MESSAGE SENT  sent=30
+2026-05-24 18:31:40 | INFO | P02 | {
+  Activity ID: 21434251879
+  Date: 2026-01-03
+  Activity Name: Honolulu Walking
+  Type: walking
+  Distance (km): 1.7
+  Duration (min): 20.25
+  Pace (min/km): 11.91
+  Avg HR: 108
+  Max HR: 134
+  Calories: 117
+  Avg Cadence: 100.15625
+  Elevation Gain (m): 17.6
+  Z1 (min): 8.33
+  Z2 (min): 2.07
+  Z3 (min): 0
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 42
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:31:40 | INFO | P02 |   Sending message with key=walking
+2026-05-24 18:31:40 | INFO | P02 |   MESSAGE SENT  sent=31
+2026-05-24 18:31:42 | INFO | P02 | {
+  Activity ID: 21434251807
+  Date: 2026-01-03
+  Activity Name: Pool Swim
+  Type: lap_swimming
+  Distance (km): 1.42
+  Duration (min): 54.05
+  Pace (min/km): 38.14
+  Avg HR: 120
+  Max HR: 174
+  Calories: 369
+  Avg Cadence: 0
+  Elevation Gain (m): 0
+  Z1 (min): 20.68
+  Z2 (min): 22.05
+  Z3 (min): 1.2
+  Z4 (min): 0.67
+  Z5 (min): 0
+  VO2 Max: 
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:31:42 | INFO | P02 |   Sending message with key=lap_swimming
+2026-05-24 18:31:43 | INFO | P02 |   MESSAGE SENT  sent=32
+2026-05-24 18:31:45 | INFO | P02 | {
+  Activity ID: 21434251737
+  Date: 2026-01-03
+  Activity Name: Honolulu - Base
+  Type: running
+  Distance (km): 4.8
+  Duration (min): 41.12
+  Pace (min/km): 8.57
+  Avg HR: 143
+  Max HR: 162
+  Calories: 392
+  Avg Cadence: 142.25
+  Elevation Gain (m): 80.4
+  Z1 (min): 0.27
+  Z2 (min): 25.02
+  Z3 (min): 15.3
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 42
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:31:45 | INFO | P02 |   Sending message with key=running
+2026-05-24 18:31:45 | INFO | P02 |   MESSAGE SENT  sent=33
+2026-05-24 18:31:47 | INFO | P02 | {
+  Activity ID: 21426094176
+  Date: 2026-01-02
+  Activity Name: Rucking the dog
+  Type: walking
+  Distance (km): 1.7
+  Duration (min): 22.75
+  Pace (min/km): 13.39
+  Avg HR: 103
+  Max HR: 132
+  Calories: 130
+  Avg Cadence: 78.171875
+  Elevation Gain (m): 14.3
+  Z1 (min): 8.37
+  Z2 (min): 0.3
+  Z3 (min): 0
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 42
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:31:47 | INFO | P02 |   Sending message with key=walking
+2026-05-24 18:31:47 | INFO | P02 |   MESSAGE SENT  sent=34
+2026-05-24 18:31:48 | DEBUG | C02 | KAFKA_BOOTSTRAP_SERVERS           = localhost:9092
+2026-05-24 18:31:48 | DEBUG | C02 | KAFKA_BROKER_ADDRESS_FAMILY       = v6
+2026-05-24 18:31:48 | DEBUG | C02 | KAFKA_TOPIC                       = streaming-02-kafka-garmin
+2026-05-24 18:31:48 | DEBUG | C02 | KAFKA_CLEAR_TOPIC_ON_START        = true
+2026-05-24 18:31:48 | DEBUG | C02 | PRODUCER_MESSAGE_COUNT            = 100
+2026-05-24 18:31:48 | DEBUG | C02 | PRODUCER_MESSAGE_INTERVAL_SECONDS = 2
+2026-05-24 18:31:48 | DEBUG | C02 | PRODUCER_MAX_MESSAGES             = 100
+2026-05-24 18:31:48 | DEBUG | C02 | PRODUCER_POLL_INTERVAL_SECONDS    = 15
+2026-05-24 18:31:48 | DEBUG | C02 | KAFKA_GROUP_ID                    = streaming-consumer-group-A
+2026-05-24 18:31:48 | DEBUG | C02 | KAFKA_AUTO_OFFSET_RESET           = earliest
+2026-05-24 18:31:48 | DEBUG | C02 | CONSUMER_TIMEOUT_SECONDS          = 10
+2026-05-24 18:31:48 | DEBUG | C02 | CONSUMER_MAX_MESSAGES             = 1000
+2026-05-24 18:31:48 | INFO | C02 | === RUN START ===
+2026-05-24 18:31:48 | INFO | C02 | project=C02
+2026-05-24 18:31:48 | INFO | C02 | repo_dir=streaming-02-kafka
+2026-05-24 18:31:48 | INFO | C02 | python=3.14.5
+2026-05-24 18:31:48 | INFO | C02 | os=Windows 11
+2026-05-24 18:31:48 | INFO | C02 | shell=powershell
+2026-05-24 18:31:48 | INFO | C02 | cwd=.
+2026-05-24 18:31:48 | INFO | C02 | github_actions=False
+2026-05-24 18:31:48 | INFO | C02 | ========================
+2026-05-24 18:31:48 | INFO | C02 | START consumer main()
+2026-05-24 18:31:48 | INFO | C02 | ========================
+2026-05-24 18:31:48 | INFO | C02 | ROOT_DIR = .
+2026-05-24 18:31:48 | INFO | C02 | DATA_DIR = data
+2026-05-24 18:31:48 | INFO | C02 | OUTPUT_CSV = data\output\consumed_garmin_data.csv
+2026-05-24 18:31:48 | INFO | C02 | ========================
+2026-05-24 18:31:48 | INFO | C02 | SECTION A. Acquire
+2026-05-24 18:31:48 | INFO | C02 | ========================
+2026-05-24 18:31:48 | INFO | C02 | Loading settings from .env...
+2026-05-24 18:31:48 | INFO | C02 | KAFKA_BOOTSTRAP_SERVERS  = localhost:9092
+2026-05-24 18:31:48 | INFO | C02 | KAFKA_TOPIC              = streaming-02-kafka-garmin
+2026-05-24 18:31:48 | INFO | C02 | KAFKA_GROUP_ID           = streaming-consumer-group-A
+2026-05-24 18:31:48 | INFO | C02 | CONSUMER_TIMEOUT_SECONDS = 10.0
+2026-05-24 18:31:48 | INFO | C02 | CONSUMER_MAX_MESSAGES    = 1000
+2026-05-24 18:31:48 | INFO | C02 | Verifying Kafka connection...
+2026-05-24 18:31:48 | INFO | C02 | Kafka port is reachable.
+2026-05-24 18:31:48 | INFO | C02 | Verifying Kafka topic...
+2026-05-24 18:31:49 | INFO | P02 | {
+  Activity ID: 21424321581
+  Date: 2026-01-02
+  Activity Name: Honolulu Surfing
+  Type: surfing_v2
+  Distance (km): 2.52
+  Duration (min): 53.87
+  Pace (min/km): 21.34
+  Avg HR: 138
+  Max HR: 184
+  Calories: 437
+  Avg Cadence: 0
+  Elevation Gain (m): 0
+  Z1 (min): 10.97
+  Z2 (min): 26.83
+  Z3 (min): 12.1
+  Z4 (min): 3.42
+  Z5 (min): 0
+  VO2 Max: 
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:31:49 | INFO | P02 |   Sending message with key=surfing_v2
+2026-05-24 18:31:49 | INFO | P02 |   MESSAGE SENT  sent=35
+2026-05-24 18:31:50 | INFO | C02 | Topic 'streaming-02-kafka-garmin' exists.
+2026-05-24 18:31:50 | INFO | C02 | Found 35 message(s) available.
+2026-05-24 18:31:50 | INFO | C02 | Creating Kafka consumer...
+2026-05-24 18:31:50 | INFO | C02 | Subscribed to topic: 'streaming-02-kafka-garmin' (reading from beginning)
+2026-05-24 18:31:50 | INFO | C02 | ========================
+2026-05-24 18:31:50 | INFO | C02 | SECTION C. Consume and Process Messages
+2026-05-24 18:31:50 | INFO | C02 | ========================
+2026-05-24 18:31:50 | INFO | C02 | Initializing output...
+2026-05-24 18:31:50 | INFO | C02 | Output CSV cleared: consumed_garmin_data.csv
+2026-05-24 18:31:50 | INFO | C02 | Consuming messages...
+2026-05-24 18:31:50 | INFO | C02 | Waiting for up to 1000 message(s).
+2026-05-24 18:31:50 | INFO | C02 | Press CTRL+C to stop early.
+
+2026-05-24 18:31:51 | INFO | P02 | {
+  Activity ID: 21416299565
+  Date: 2026-01-01
+  Activity Name: Honolulu - Tempo
+  Type: running
+  Distance (km): 7.6
+  Duration (min): 56.49
+  Pace (min/km): 7.43
+  Avg HR: 151
+  Max HR: 177
+  Calories: 614
+  Avg Cadence: 138.28125
+  Elevation Gain (m): 94.8
+  Z1 (min): 8.06
+  Z2 (min): 13.81
+  Z3 (min): 11.23
+  Z4 (min): 22.88
+  Z5 (min): 0
+  VO2 Max: 42
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:31:51 | INFO | P02 |   Sending message with key=running
+2026-05-24 18:31:51 | INFO | P02 |   MESSAGE SENT  sent=36
+2026-05-24 18:31:53 | INFO | P02 | {
+  Activity ID: 21414652963
+  Date: 2026-01-01
+  Activity Name: Rucking the dog
+  Type: walking
+  Distance (km): 1.75
+  Duration (min): 20.6
+  Pace (min/km): 11.75
+  Avg HR: 114
+  Max HR: 130
+  Calories: 138
+  Avg Cadence: 88.015625
+  Elevation Gain (m): 23.6
+  Z1 (min): 16.41
+  Z2 (min): 1.63
+  Z3 (min): 0
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 42
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:31:53 | INFO | P02 |   Sending message with key=walking
+2026-05-24 18:31:53 | INFO | P02 |   MESSAGE SENT  sent=37
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21965542196', 'Activity Name': 'Honolulu - W01D1-Easy Run', 'Avg Cadence': '98', 'Avg HR': '96', 'Avg Stress': '', 'Calories': '249', 'Date': '2026-02-23', 'Distance (km)': '3.46', 'Duration (min)': '41.47', 'Elevation Gain (m)': '49.4', 'End Stress': '', 'Max HR': '119', 'Max Stress': '', 'Pace (min/km)': '11.99', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '', 'Z1 (min)': '9.2', 'Z2 (min)': '0', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 0}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=1
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21954265312', 'Activity Name': 'Honolulu Walking', 'Avg Cadence': '87.796875', 'Avg HR': '128', 'Avg Stress': '', 'Calories': '163', 'Date': '2026-02-22', 'Distance (km)': '1.99', 'Duration (min)': '21.54', 'Elevation Gain (m)': '33', 'End Stress': '', 'Max HR': '147', 'Max Stress': '', 'Pace (min/km)': '10.84', 'Start Stress': '', 'Stress Diff': '', 'Type': 'walking', 'VO2 Max': '43', 'Z1 (min)': '7.32', 'Z2 (min)': '13.87', 'Z3 (min)': '0.35', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'walking', '_kafka_partition': 0, '_kafka_offset': 1}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=2
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21943859743', 'Activity Name': 'Coherence', 'Avg Cadence': '0', 'Avg HR': '94', 'Avg Stress': '70', 'Calories': '0', 'Date': '2026-02-21', 'Distance (km)': '0', 'Duration (min)': '15.57', 'Elevation Gain (m)': '0', 'End Stress': '60', 'Max HR': '107', 'Max Stress': '83', 'Pace (min/km)': '0', 'Start Stress': '83', 'Stress Diff': '-23', 'Type': 'breathwork', 'VO2 Max': '', 'Z1 (min)': '0.91', 'Z2 (min)': '0', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'breathwork', '_kafka_partition': 0, '_kafka_offset': 2}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=3
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21943770023', 'Activity Name': 'Honolulu - Base', 'Avg Cadence': '139.703125', 'Avg HR': '150', 'Avg Stress': '', 'Calories': '402', 'Date': '2026-02-21', 'Distance (km)': '5.11', 'Duration (min)': '44.79', 'Elevation Gain (m)': '56.8', 'End Stress': '', 'Max HR': '164', 'Max Stress': '', 'Pace (min/km)': '8.77', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '43', 'Z1 (min)': '1.35', 'Z2 (min)': '6.13', 'Z3 (min)': '37.28', 'Z4 (min)': '0.02', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 3}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=4
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21921828818', 'Activity Name': 'Honolulu - Base', 'Avg Cadence': '136.171875', 'Avg HR': '146', 'Avg Stress': '', 'Calories': '328', 'Date': '2026-02-19', 'Distance (km)': '4.05', 'Duration (min)': '33.09', 'Elevation Gain (m)': '50.7', 'End Stress': '', 'Max HR': '160', 'Max Stress': '', 'Pace (min/km)': '8.18', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '43', 'Z1 (min)': '1.52', 'Z2 (min)': '6.83', 'Z3 (min)': '24.23', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 4}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=5
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21892130373', 'Activity Name': 'Rucking the dog ', 'Avg Cadence': '77.296875', 'Avg HR': '114', 'Avg Stress': '', 'Calories': '167', 'Date': '2026-02-16', 'Distance (km)': '1.98', 'Duration (min)': '26.06', 'Elevation Gain (m)': '31.7', 'End Stress': '', 'Max HR': '151', 'Max Stress': '', 'Pace (min/km)': '13.17', 'Start Stress': '', 'Stress Diff': '', 'Type': 'walking', 'VO2 Max': '43', 'Z1 (min)': '12.23', 'Z2 (min)': '5.88', 'Z3 (min)': '1.27', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'walking', '_kafka_partition': 0, '_kafka_offset': 5}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=6
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21889719484', 'Activity Name': 'Honolulu - Hill sprints 10*15s', 'Avg Cadence': '113.828125', 'Avg HR': '144', 'Avg Stress': '', 'Calories': '278', 'Date': '2026-02-16', 'Distance (km)': '3.17', 'Duration (min)': '28.72', 'Elevation Gain (m)': '64.7', 'End Stress': '', 'Max HR': '177', 'Max Stress': '', 'Pace (min/km)': '9.06', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '', 'Z1 (min)': '2.18', 'Z2 (min)': '14.31', 'Z3 (min)': '7.95', 'Z4 (min)': '3.68', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 6}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=7
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21880043348', 'Activity Name': 'Honolulu - Tempo', 'Avg Cadence': '144.640625', 'Avg HR': '158', 'Avg Stress': '', 'Calories': '662', 'Date': '2026-02-15', 'Distance (km)': '8.13', 'Duration (min)': '60.74', 'Elevation Gain (m)': '88.4', 'End Stress': '', 'Max HR': '176', 'Max Stress': '', 'Pace (min/km)': '7.47', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '43', 'Z1 (min)': '0.97', 'Z2 (min)': '7.39', 'Z3 (min)': '20.37', 'Z4 (min)': '31.68', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 7}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=8
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21860487689', 'Activity Name': 'Honolulu - Long Run', 'Avg Cadence': '129.9375', 'Avg HR': '151', 'Avg Stress': '', 'Calories': '636', 'Date': '2026-02-13', 'Distance (km)': '7.92', 'Duration (min)': '70.6', 'Elevation Gain (m)': '95.9', 'End Stress': '', 'Max HR': '168', 'Max Stress': '', 'Pace (min/km)': '8.92', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '43', 'Z1 (min)': '0.65', 'Z2 (min)': '11.51', 'Z3 (min)': '56.87', 'Z4 (min)': '1.58', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 8}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=9
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21829475018', 'Activity Name': 'Indoor Cycling', 'Avg Cadence': '0', 'Avg HR': '134', 'Avg Stress': '', 'Calories': '251', 'Date': '2026-02-10', 'Distance (km)': '9.66', 'Duration (min)': '28.54', 'Elevation Gain (m)': '0', 'End Stress': '', 'Max HR': '168', 'Max Stress': '', 'Pace (min/km)': '2.96', 'Start Stress': '', 'Stress Diff': '', 'Type': 'indoor_cycling', 'VO2 Max': '', 'Z1 (min)': '2.27', 'Z2 (min)': '24.41', 'Z3 (min)': '1.42', 'Z4 (min)': '0.43', 'Z5 (min)': '0', '_kafka_key': 'indoor_cycling', '_kafka_partition': 0, '_kafka_offset': 9}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=10
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21808906486', 'Activity Name': 'Honolulu - Base', 'Avg Cadence': '141.28125', 'Avg HR': '148', 'Avg Stress': '', 'Calories': '504', 'Date': '2026-02-08', 'Distance (km)': '6.23', 'Duration (min)': '53', 'Elevation Gain (m)': '75.8', 'End Stress': '', 'Max HR': '163', 'Max Stress': '', 'Pace (min/km)': '8.5', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '43', 'Z1 (min)': '1.51', 'Z2 (min)': '10.69', 'Z3 (min)': '40.42', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 10}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=11
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21755172774', 'Activity Name': 'Honolulu Multisport', 'Avg Cadence': '0', 'Avg HR': '0', 'Avg Stress': '', 'Calories': '544', 'Date': '2026-02-03', 'Distance (km)': '4.45', 'Duration (min)': '80.45', 'Elevation Gain (m)': '75', 'End Stress': '', 'Max HR': '140', 'Max Stress': '', 'Pace (min/km)': '18.07', 'Start Stress': '', 'Stress Diff': '', 'Type': 'multi_sport', 'VO2 Max': '', 'Z1 (min)': '0', 'Z2 (min)': '0', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'multi_sport', '_kafka_partition': 0, '_kafka_offset': 11}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=12
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21734813204', 'Activity Name': 'Honolulu - Base', 'Avg Cadence': '144.015625', 'Avg HR': '144', 'Avg Stress': '', 'Calories': '367', 'Date': '2026-02-01', 'Distance (km)': '4.52', 'Duration (min)': '35.19', 'Elevation Gain (m)': '50.8', 'End Stress': '', 'Max HR': '159', 'Max Stress': '', 'Pace (min/km)': '7.79', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '43', 'Z1 (min)': '1.48', 'Z2 (min)': '12.8', 'Z3 (min)': '20.47', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 12}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=13
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21724351150', 'Activity Name': 'Honolulu Walking', 'Avg Cadence': '76.734375', 'Avg HR': '111', 'Avg Stress': '', 'Calories': '126', 'Date': '2026-01-31', 'Distance (km)': '1.58', 'Duration (min)': '20.39', 'Elevation Gain (m)': '23.1', 'End Stress': '', 'Max HR': '130', 'Max Stress': '', 'Pace (min/km)': '12.94', 'Start Stress': '', 'Stress Diff': '', 'Type': 'walking', 'VO2 Max': '43', 'Z1 (min)': '15.27', 'Z2 (min)': '1', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'walking', '_kafka_partition': 0, '_kafka_offset': 13}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=14
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21694554359', 'Activity Name': 'Honolulu - Hill sprints 10*15s', 'Avg Cadence': '135.390625', 'Avg HR': '144', 'Avg Stress': '', 'Calories': '320', 'Date': '2026-01-28', 'Distance (km)': '3.68', 'Duration (min)': '31.2', 'Elevation Gain (m)': '65.7', 'End Stress': '', 'Max HR': '177', 'Max Stress': '', 'Pace (min/km)': '8.48', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '43', 'Z1 (min)': '3.67', 'Z2 (min)': '11.78', 'Z3 (min)': '10.39', 'Z4 (min)': '4.99', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 14}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=15
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21683561200', 'Activity Name': 'Honolulu - Base', 'Avg Cadence': '146.609375', 'Avg HR': '149', 'Avg Stress': '', 'Calories': '528', 'Date': '2026-01-27', 'Distance (km)': '6.4', 'Duration (min)': '49.14', 'Elevation Gain (m)': '55.1', 'End Stress': '', 'Max HR': '164', 'Max Stress': '', 'Pace (min/km)': '7.67', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '43', 'Z1 (min)': '1.54', 'Z2 (min)': '7.78', 'Z3 (min)': '39.38', 'Z4 (min)': '0.12', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 15}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=16
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21663871750', 'Activity Name': 'Honolulu - Base', 'Avg Cadence': '145.34375', 'Avg HR': '142', 'Avg Stress': '', 'Calories': '292', 'Date': '2026-01-25', 'Distance (km)': '3.66', 'Duration (min)': '28.95', 'Elevation Gain (m)': '39.2', 'End Stress': '', 'Max HR': '157', 'Max Stress': '', 'Pace (min/km)': '7.9', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '43', 'Z1 (min)': '1.37', 'Z2 (min)': '14.95', 'Z3 (min)': '12.33', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 16}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=17
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21652909277', 'Activity Name': 'Magic Island Biathlon (Run-Swim)', 'Avg Cadence': '0', 'Avg HR': '0', 'Avg Stress': '', 'Calories': '599', 'Date': '2026-01-24', 'Distance (km)': '5.72', 'Duration (min)': '45.79', 'Elevation Gain (m)': '8.7', 'End Stress': '', 'Max HR': '184', 'Max Stress': '', 'Pace (min/km)': '8', 'Start Stress': '', 'Stress Diff': '', 'Type': 'multi_sport', 'VO2 Max': '', 'Z1 (min)': '0', 'Z2 (min)': '0', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'multi_sport', '_kafka_partition': 0, '_kafka_offset': 17}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=18
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21613974412', 'Activity Name': "Ka'ena Ruck ", 'Avg Cadence': '51.734375', 'Avg HR': '101', 'Avg Stress': '', 'Calories': '910', 'Date': '2026-01-20', 'Distance (km)': '10.21', 'Duration (min)': '224.41', 'Elevation Gain (m)': '117.6', 'End Stress': '', 'Max HR': '134', 'Max Stress': '', 'Pace (min/km)': '21.97', 'Start Stress': '', 'Stress Diff': '', 'Type': 'hiking', 'VO2 Max': '', 'Z1 (min)': '91.88', 'Z2 (min)': '4.7', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'hiking', '_kafka_partition': 0, '_kafka_offset': 18}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=19
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21603388008', 'Activity Name': 'Honolulu Surfing', 'Avg Cadence': '0', 'Avg HR': '111', 'Avg Stress': '', 'Calories': '270', 'Date': '2026-01-19', 'Distance (km)': '1.55', 'Duration (min)': '48.11', 'Elevation Gain (m)': '0', 'End Stress': '', 'Max HR': '164', 'Max Stress': '', 'Pace (min/km)': '31.04', 'Start Stress': '', 'Stress Diff': '', 'Type': 'surfing_v2', 'VO2 Max': '', 'Z1 (min)': '17.17', 'Z2 (min)': '7.52', 'Z3 (min)': '4.43', 'Z4 (min)': '0.02', 'Z5 (min)': '0', '_kafka_key': 'surfing_v2', '_kafka_partition': 0, '_kafka_offset': 19}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=20
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21599892014', 'Activity Name': 'Morning Run with Michael', 'Avg Cadence': '142.90625', 'Avg HR': '153', 'Avg Stress': '', 'Calories': '379', 'Date': '2026-01-19', 'Distance (km)': '4.55', 'Duration (min)': '35.23', 'Elevation Gain (m)': '49.5', 'End Stress': '', 'Max HR': '165', 'Max Stress': '', 'Pace (min/km)': '7.74', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '42', 'Z1 (min)': '1.26', 'Z2 (min)': '3.35', 'Z3 (min)': '29.85', 'Z4 (min)': '0.58', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 20}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=21
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21561680912', 'Activity Name': 'Maui County Open Water Swimming', 'Avg Cadence': '0', 'Avg HR': '91', 'Avg Stress': '', 'Calories': '108', 'Date': '2026-01-15', 'Distance (km)': '0.66', 'Duration (min)': '26.36', 'Elevation Gain (m)': '0', 'End Stress': '', 'Max HR': '134', 'Max Stress': '', 'Pace (min/km)': '39.67', 'Start Stress': '', 'Stress Diff': '', 'Type': 'open_water_swimming', 'VO2 Max': '', 'Z1 (min)': '4.7', 'Z2 (min)': '2.15', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'open_water_swimming', '_kafka_partition': 0, '_kafka_offset': 21}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=22
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21551109690', 'Activity Name': 'Maui County Walking', 'Avg Cadence': '35.578125', 'Avg HR': '90', 'Avg Stress': '', 'Calories': '129', 'Date': '2026-01-14', 'Distance (km)': '1.22', 'Duration (min)': '36.03', 'Elevation Gain (m)': '30.8', 'End Stress': '', 'Max HR': '122', 'Max Stress': '', 'Pace (min/km)': '29.51', 'Start Stress': '', 'Stress Diff': '', 'Type': 'walking', 'VO2 Max': '42', 'Z1 (min)': '5.13', 'Z2 (min)': '0', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'walking', '_kafka_partition': 0, '_kafka_offset': 22}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=23
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21549658299', 'Activity Name': 'Molokini Crater Open Water Swimming', 'Avg Cadence': '0', 'Avg HR': '97', 'Avg Stress': '', 'Calories': '401', 'Date': '2026-01-14', 'Distance (km)': '1.44', 'Duration (min)': '95.11', 'Elevation Gain (m)': '0', 'End Stress': '', 'Max HR': '136', 'Max Stress': '', 'Pace (min/km)': '66.24', 'Start Stress': '', 'Stress Diff': '', 'Type': 'open_water_swimming', 'VO2 Max': '', 'Z1 (min)': '21.63', 'Z2 (min)': '6.22', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'open_water_swimming', '_kafka_partition': 0, '_kafka_offset': 23}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=24
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21540021296', 'Activity Name': 'Iao Valley Walking', 'Avg Cadence': '25.1875', 'Avg HR': '89', 'Avg Stress': '', 'Calories': '182', 'Date': '2026-01-13', 'Distance (km)': '1.38', 'Duration (min)': '55.19', 'Elevation Gain (m)': '50.1', 'End Stress': '', 'Max HR': '119', 'Max Stress': '', 'Pace (min/km)': '39.93', 'Start Stress': '', 'Stress Diff': '', 'Type': 'walking', 'VO2 Max': '', 'Z1 (min)': '7.8', 'Z2 (min)': '0', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'walking', '_kafka_partition': 0, '_kafka_offset': 24}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=25
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21537704513', 'Activity Name': 'Olowalu Open Water Swimming', 'Avg Cadence': '0', 'Avg HR': '109', 'Avg Stress': '', 'Calories': '314', 'Date': '2026-01-13', 'Distance (km)': '1.28', 'Duration (min)': '54.62', 'Elevation Gain (m)': '0', 'End Stress': '', 'Max HR': '154', 'Max Stress': '', 'Pace (min/km)': '42.76', 'Start Stress': '', 'Stress Diff': '', 'Type': 'open_water_swimming', 'VO2 Max': '', 'Z1 (min)': '25.19', 'Z2 (min)': '6.68', 'Z3 (min)': '1.72', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'open_water_swimming', '_kafka_partition': 0, '_kafka_offset': 25}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=26
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21525046427', 'Activity Name': 'Honolulu - Base', 'Avg Cadence': '140.640625', 'Avg HR': '138', 'Avg Stress': '', 'Calories': '281', 'Date': '2026-01-12', 'Distance (km)': '3.54', 'Duration (min)': '29.26', 'Elevation Gain (m)': '59.9', 'End Stress': '', 'Max HR': '153', 'Max Stress': '', 'Pace (min/km)': '8.26', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '', 'Z1 (min)': '2.11', 'Z2 (min)': '24.88', 'Z3 (min)': '2.05', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 26}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=27
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21516398959', 'Activity Name': 'Honolulu - Base', 'Avg Cadence': '135.21875', 'Avg HR': '141', 'Avg Stress': '', 'Calories': '559', 'Date': '2026-01-11', 'Distance (km)': '7.15', 'Duration (min)': '62.17', 'Elevation Gain (m)': '77.9', 'End Stress': '', 'Max HR': '181', 'Max Stress': '', 'Pace (min/km)': '8.69', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '42', 'Z1 (min)': '3.97', 'Z2 (min)': '45.07', 'Z3 (min)': '10.5', 'Z4 (min)': '2.56', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 27}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=28
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21496077788', 'Activity Name': 'Pool Swim', 'Avg Cadence': '0', 'Avg HR': '127', 'Avg Stress': '', 'Calories': '369', 'Date': '2026-01-09', 'Distance (km)': '1.5', 'Duration (min)': '46.15', 'Elevation Gain (m)': '0', 'End Stress': '', 'Max HR': '165', 'Max Stress': '', 'Pace (min/km)': '30.77', 'Start Stress': '', 'Stress Diff': '', 'Type': 'lap_swimming', 'VO2 Max': '', 'Z1 (min)': '12.65', 'Z2 (min)': '19.98', 'Z3 (min)': '7.1', 'Z4 (min)': '0.07', 'Z5 (min)': '0', '_kafka_key': 'lap_swimming', '_kafka_partition': 0, '_kafka_offset': 28}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=29
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21488467760', 'Activity Name': 'Honolulu Running', 'Avg Cadence': '134', 'Avg HR': '137', 'Avg Stress': '', 'Calories': '262', 'Date': '2026-01-08', 'Distance (km)': '3.31', 'Duration (min)': '27.6', 'Elevation Gain (m)': '42.1', 'End Stress': '', 'Max HR': '155', 'Max Stress': '', 'Pace (min/km)': '8.35', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '42', 'Z1 (min)': '5.01', 'Z2 (min)': '11.8', 'Z3 (min)': '10.48', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 29}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=30
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21434251879', 'Activity Name': 'Honolulu Walking', 'Avg Cadence': '100.15625', 'Avg HR': '108', 'Avg Stress': '', 'Calories': '117', 'Date': '2026-01-03', 'Distance (km)': '1.7', 'Duration (min)': '20.25', 'Elevation Gain (m)': '17.6', 'End Stress': '', 'Max HR': '134', 'Max Stress': '', 'Pace (min/km)': '11.91', 'Start Stress': '', 'Stress Diff': '', 'Type': 'walking', 'VO2 Max': '42', 'Z1 (min)': '8.33', 'Z2 (min)': '2.07', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'walking', '_kafka_partition': 0, '_kafka_offset': 30}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=31
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21434251807', 'Activity Name': 'Pool Swim', 'Avg Cadence': '0', 'Avg HR': '120', 'Avg Stress': '', 'Calories': '369', 'Date': '2026-01-03', 'Distance (km)': '1.42', 'Duration (min)': '54.05', 'Elevation Gain (m)': '0', 'End Stress': '', 'Max HR': '174', 'Max Stress': '', 'Pace (min/km)': '38.14', 'Start Stress': '', 'Stress Diff': '', 'Type': 'lap_swimming', 'VO2 Max': '', 'Z1 (min)': '20.68', 'Z2 (min)': '22.05', 'Z3 (min)': '1.2', 'Z4 (min)': '0.67', 'Z5 (min)': '0', '_kafka_key': 'lap_swimming', '_kafka_partition': 0, '_kafka_offset': 31}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=32
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21434251737', 'Activity Name': 'Honolulu - Base', 'Avg Cadence': '142.25', 'Avg HR': '143', 'Avg Stress': '', 'Calories': '392', 'Date': '2026-01-03', 'Distance (km)': '4.8', 'Duration (min)': '41.12', 'Elevation Gain (m)': '80.4', 'End Stress': '', 'Max HR': '162', 'Max Stress': '', 'Pace (min/km)': '8.57', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '42', 'Z1 (min)': '0.27', 'Z2 (min)': '25.02', 'Z3 (min)': '15.3', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 32}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=33
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21426094176', 'Activity Name': 'Rucking the dog', 'Avg Cadence': '78.171875', 'Avg HR': '103', 'Avg Stress': '', 'Calories': '130', 'Date': '2026-01-02', 'Distance (km)': '1.7', 'Duration (min)': '22.75', 'Elevation Gain (m)': '14.3', 'End Stress': '', 'Max HR': '132', 'Max Stress': '', 'Pace (min/km)': '13.39', 'Start Stress': '', 'Stress Diff': '', 'Type': 'walking', 'VO2 Max': '42', 'Z1 (min)': '8.37', 'Z2 (min)': '0.3', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'walking', '_kafka_partition': 0, '_kafka_offset': 33}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=34
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21424321581', 'Activity Name': 'Honolulu Surfing', 'Avg Cadence': '0', 'Avg HR': '138', 'Avg Stress': '', 'Calories': '437', 'Date': '2026-01-02', 'Distance (km)': '2.52', 'Duration (min)': '53.87', 'Elevation Gain (m)': '0', 'End Stress': '', 'Max HR': '184', 'Max Stress': '', 'Pace (min/km)': '21.34', 'Start Stress': '', 'Stress Diff': '', 'Type': 'surfing_v2', 'VO2 Max': '', 'Z1 (min)': '10.97', 'Z2 (min)': '26.83', 'Z3 (min)': '12.1', 'Z4 (min)': '3.42', 'Z5 (min)': '0', '_kafka_key': 'surfing_v2', '_kafka_partition': 0, '_kafka_offset': 34}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=35
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21416299565', 'Activity Name': 'Honolulu - Tempo', 'Avg Cadence': '138.28125', 'Avg HR': '151', 'Avg Stress': '', 'Calories': '614', 'Date': '2026-01-01', 'Distance (km)': '7.6', 'Duration (min)': '56.49', 'Elevation Gain (m)': '94.8', 'End Stress': '', 'Max HR': '177', 'Max Stress': '', 'Pace (min/km)': '7.43', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '42', 'Z1 (min)': '8.06', 'Z2 (min)': '13.81', 'Z3 (min)': '11.23', 'Z4 (min)': '22.88', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 35}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=36
+2026-05-24 18:31:53 | INFO | C02 | {'Activity ID': '21414652963', 'Activity Name': 'Rucking the dog', 'Avg Cadence': '88.015625', 'Avg HR': '114', 'Avg Stress': '', 'Calories': '138', 'Date': '2026-01-01', 'Distance (km)': '1.75', 'Duration (min)': '20.6', 'Elevation Gain (m)': '23.6', 'End Stress': '', 'Max HR': '130', 'Max Stress': '', 'Pace (min/km)': '11.75', 'Start Stress': '', 'Stress Diff': '', 'Type': 'walking', 'VO2 Max': '42', 'Z1 (min)': '16.41', 'Z2 (min)': '1.63', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'walking', '_kafka_partition': 0, '_kafka_offset': 36}
+2026-05-24 18:31:53 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:53 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:53 | INFO | C02 | consumed=37
+2026-05-24 18:31:55 | INFO | P02 | {
+  Activity ID: 21389032797
+  Date: 2025-12-29
+  Activity Name: Honolulu - Recovery
+  Type: running
+  Distance (km): 2.21
+  Duration (min): 20.17
+  Pace (min/km): 9.14
+  Avg HR: 128.2280992
+  Max HR: 145
+  Calories: 160
+  Avg Cadence: 121.6801653
+  Elevation Gain (m): 22.8
+  Z1 (min): 3.28
+  Z2 (min): 14.53
+  Z3 (min): 0
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:31:55 | INFO | P02 |   Sending message with key=running
+2026-05-24 18:31:55 | INFO | P02 |   MESSAGE SENT  sent=38
+2026-05-24 18:31:55 | INFO | C02 | {'Activity ID': '21389032797', 'Activity Name': 'Honolulu - Recovery', 'Avg Cadence': '121.6801653', 'Avg HR': '128.2280992', 'Avg Stress': '', 'Calories': '160', 'Date': '2025-12-29', 'Distance (km)': '2.21', 'Duration (min)': '20.17', 'Elevation Gain (m)': '22.8', 'End Stress': '', 'Max HR': '145', 'Max Stress': '', 'Pace (min/km)': '9.14', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '', 'Z1 (min)': '3.28', 'Z2 (min)': '14.53', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 37}
+2026-05-24 18:31:55 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:55 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:55 | INFO | C02 | consumed=38
+2026-05-24 18:31:57 | INFO | P02 | {
+  Activity ID: 21386117584
+  Date: 2025-12-29
+  Activity Name: Bus Stop Ruck 
+  Type: walking
+  Distance (km): 1.8
+  Duration (min): 20.12
+  Pace (min/km): 11.19
+  Avg HR: 110
+  Max HR: 126
+  Calories: 126
+  Avg Cadence: 104.46875
+  Elevation Gain (m): 5.4
+  Z1 (min): 12.85
+  Z2 (min): 1.22
+  Z3 (min): 0
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 42
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:31:57 | INFO | P02 |   Sending message with key=walking
+2026-05-24 18:31:57 | INFO | P02 |   MESSAGE SENT  sent=39
+2026-05-24 18:31:57 | INFO | C02 | {'Activity ID': '21386117584', 'Activity Name': 'Bus Stop Ruck ', 'Avg Cadence': '104.46875', 'Avg HR': '110', 'Avg Stress': '', 'Calories': '126', 'Date': '2025-12-29', 'Distance (km)': '1.8', 'Duration (min)': '20.12', 'Elevation Gain (m)': '5.4', 'End Stress': '', 'Max HR': '126', 'Max Stress': '', 'Pace (min/km)': '11.19', 'Start Stress': '', 'Stress Diff': '', 'Type': 'walking', 'VO2 Max': '42', 'Z1 (min)': '12.85', 'Z2 (min)': '1.22', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'walking', '_kafka_partition': 0, '_kafka_offset': 38}
+2026-05-24 18:31:57 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:57 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:57 | INFO | C02 | consumed=39
+2026-05-24 18:31:59 | INFO | P02 | {
+  Activity ID: 21378385279
+  Date: 2025-12-28
+  Activity Name: Honolulu - Recovery
+  Type: running
+  Distance (km): 2.34
+  Duration (min): 20.58
+  Pace (min/km): 8.78
+  Avg HR: 134
+  Max HR: 154
+  Calories: 183
+  Avg Cadence: 129.984375
+  Elevation Gain (m): 16.1
+  Z1 (min): 4.33
+  Z2 (min): 13.55
+  Z3 (min): 2.37
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:31:59 | INFO | P02 |   Sending message with key=running
+2026-05-24 18:31:59 | INFO | P02 |   MESSAGE SENT  sent=40
+2026-05-24 18:31:59 | INFO | C02 | {'Activity ID': '21378385279', 'Activity Name': 'Honolulu - Recovery', 'Avg Cadence': '129.984375', 'Avg HR': '134', 'Avg Stress': '', 'Calories': '183', 'Date': '2025-12-28', 'Distance (km)': '2.34', 'Duration (min)': '20.58', 'Elevation Gain (m)': '16.1', 'End Stress': '', 'Max HR': '154', 'Max Stress': '', 'Pace (min/km)': '8.78', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '', 'Z1 (min)': '4.33', 'Z2 (min)': '13.55', 'Z3 (min)': '2.37', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 39}
+2026-05-24 18:31:59 | INFO | C02 | Processing raw message.
+2026-05-24 18:31:59 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:31:59 | INFO | C02 | consumed=40
+2026-05-24 18:32:01 | INFO | P02 | {
+  Activity ID: 21367728357
+  Date: 2025-12-27
+  Activity Name: Honolulu - Long Run
+  Type: running
+  Distance (km): 8.8
+  Duration (min): 78.15
+  Pace (min/km): 8.88
+  Avg HR: 136
+  Max HR: 156
+  Calories: 679
+  Avg Cadence: 139.109375
+  Elevation Gain (m): 87.1
+  Z1 (min): 5.32
+  Z2 (min): 55.08
+  Z3 (min): 16.37
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 42
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:32:01 | INFO | P02 |   Sending message with key=running
+2026-05-24 18:32:01 | INFO | P02 |   MESSAGE SENT  sent=41
+2026-05-24 18:32:01 | INFO | C02 | {'Activity ID': '21367728357', 'Activity Name': 'Honolulu - Long Run', 'Avg Cadence': '139.109375', 'Avg HR': '136', 'Avg Stress': '', 'Calories': '679', 'Date': '2025-12-27', 'Distance (km)': '8.8', 'Duration (min)': '78.15', 'Elevation Gain (m)': '87.1', 'End Stress': '', 'Max HR': '156', 'Max Stress': '', 'Pace (min/km)': '8.88', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '42', 'Z1 (min)': '5.32', 'Z2 (min)': '55.08', 'Z3 (min)': '16.37', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 40}
+2026-05-24 18:32:01 | INFO | C02 | Processing raw message.
+2026-05-24 18:32:01 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:32:01 | INFO | C02 | consumed=41
+2026-05-24 18:32:03 | INFO | P02 | {
+  Activity ID: 21360386570
+  Date: 2025-12-26
+  Activity Name: First Bike Back-at-it
+  Type: cycling
+  Distance (km): 4.98
+  Duration (min): 20.83
+  Pace (min/km): 4.18
+  Avg HR: 119
+  Max HR: 149
+  Calories: 140
+  Avg Cadence: 0
+  Elevation Gain (m): 46.6
+  Z1 (min): 8.35
+  Z2 (min): 7.9
+  Z3 (min): 0.32
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:32:03 | INFO | P02 |   Sending message with key=cycling
+2026-05-24 18:32:03 | INFO | P02 |   MESSAGE SENT  sent=42
+2026-05-24 18:32:03 | INFO | C02 | {'Activity ID': '21360386570', 'Activity Name': 'First Bike Back-at-it', 'Avg Cadence': '0', 'Avg HR': '119', 'Avg Stress': '', 'Calories': '140', 'Date': '2025-12-26', 'Distance (km)': '4.98', 'Duration (min)': '20.83', 'Elevation Gain (m)': '46.6', 'End Stress': '', 'Max HR': '149', 'Max Stress': '', 'Pace (min/km)': '4.18', 'Start Stress': '', 'Stress Diff': '', 'Type': 'cycling', 'VO2 Max': '', 'Z1 (min)': '8.35', 'Z2 (min)': '7.9', 'Z3 (min)': '0.32', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'cycling', '_kafka_partition': 0, '_kafka_offset': 41}
+2026-05-24 18:32:03 | INFO | C02 | Processing raw message.
+2026-05-24 18:32:03 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:32:03 | INFO | C02 | consumed=42
+2026-05-24 18:32:05 | INFO | P02 | {
+  Activity ID: 21359671668
+  Date: 2025-12-26
+  Activity Name: Honolulu Walking
+  Type: walking
+  Distance (km): 1.54
+  Duration (min): 21.66
+  Pace (min/km): 14.08
+  Avg HR: 101
+  Max HR: 110
+  Calories: 108
+  Avg Cadence: 77.203125
+  Elevation Gain (m): 5.3
+  Z1 (min): 4.53
+  Z2 (min): 0
+  Z3 (min): 0
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 42
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:32:05 | INFO | P02 |   Sending message with key=walking
+2026-05-24 18:32:05 | INFO | P02 |   MESSAGE SENT  sent=43
+2026-05-24 18:32:05 | INFO | C02 | {'Activity ID': '21359671668', 'Activity Name': 'Honolulu Walking', 'Avg Cadence': '77.203125', 'Avg HR': '101', 'Avg Stress': '', 'Calories': '108', 'Date': '2025-12-26', 'Distance (km)': '1.54', 'Duration (min)': '21.66', 'Elevation Gain (m)': '5.3', 'End Stress': '', 'Max HR': '110', 'Max Stress': '', 'Pace (min/km)': '14.08', 'Start Stress': '', 'Stress Diff': '', 'Type': 'walking', 'VO2 Max': '42', 'Z1 (min)': '4.53', 'Z2 (min)': '0', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'walking', '_kafka_partition': 0, '_kafka_offset': 42}
+2026-05-24 18:32:05 | INFO | C02 | Processing raw message.
+2026-05-24 18:32:05 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:32:05 | INFO | C02 | consumed=43
+2026-05-24 18:32:07 | INFO | P02 | {
+  Activity ID: 21351304138
+  Date: 2025-12-25
+  Activity Name: Electric Beach Snorkeling
+  Type: open_water_swimming
+  Distance (km): 0.65
+  Duration (min): 42.79
+  Pace (min/km): 65.45
+  Avg HR: 106
+  Max HR: 158
+  Calories: 224
+  Avg Cadence: 0
+  Elevation Gain (m): 0
+  Z1 (min): 16.38
+  Z2 (min): 3.23
+  Z3 (min): 0.75
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:32:07 | INFO | P02 |   Sending message with key=open_water_swimming
+2026-05-24 18:32:07 | INFO | P02 |   MESSAGE SENT  sent=44
+2026-05-24 18:32:07 | INFO | C02 | {'Activity ID': '21351304138', 'Activity Name': 'Electric Beach Snorkeling', 'Avg Cadence': '0', 'Avg HR': '106', 'Avg Stress': '', 'Calories': '224', 'Date': '2025-12-25', 'Distance (km)': '0.65', 'Duration (min)': '42.79', 'Elevation Gain (m)': '0', 'End Stress': '', 'Max HR': '158', 'Max Stress': '', 'Pace (min/km)': '65.45', 'Start Stress': '', 'Stress Diff': '', 'Type': 'open_water_swimming', 'VO2 Max': '', 'Z1 (min)': '16.38', 'Z2 (min)': '3.23', 'Z3 (min)': '0.75', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'open_water_swimming', '_kafka_partition': 0, '_kafka_offset': 43}
+2026-05-24 18:32:07 | INFO | C02 | Processing raw message.
+2026-05-24 18:32:07 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:32:07 | INFO | C02 | consumed=44
+2026-05-24 18:32:09 | INFO | P02 | {
+  Activity ID: 21350274135
+  Date: 2025-12-25
+  Activity Name: Christmas Tempo
+  Type: running
+  Distance (km): 6.89
+  Duration (min): 51.46
+  Pace (min/km): 7.46
+  Avg HR: 161
+  Max HR: 182
+  Calories: 562
+  Avg Cadence: 137.640625
+  Elevation Gain (m): 63.1
+  Z1 (min): 1.08
+  Z2 (min): 9.87
+  Z3 (min): 17.71
+  Z4 (min): 22.57
+  Z5 (min): 0
+  VO2 Max: 42
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:32:09 | INFO | P02 |   Sending message with key=running
+2026-05-24 18:32:09 | INFO | P02 |   MESSAGE SENT  sent=45
+2026-05-24 18:32:09 | INFO | C02 | {'Activity ID': '21350274135', 'Activity Name': 'Christmas Tempo', 'Avg Cadence': '137.640625', 'Avg HR': '161', 'Avg Stress': '', 'Calories': '562', 'Date': '2025-12-25', 'Distance (km)': '6.89', 'Duration (min)': '51.46', 'Elevation Gain (m)': '63.1', 'End Stress': '', 'Max HR': '182', 'Max Stress': '', 'Pace (min/km)': '7.46', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '42', 'Z1 (min)': '1.08', 'Z2 (min)': '9.87', 'Z3 (min)': '17.71', 'Z4 (min)': '22.57', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 44}
+2026-05-24 18:32:09 | INFO | C02 | Processing raw message.
+2026-05-24 18:32:09 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:32:09 | INFO | C02 | consumed=45
+2026-05-24 18:32:11 | INFO | P02 | {
+  Activity ID: 21336777997
+  Date: 2025-12-23
+  Activity Name: Honolulu - Base
+  Type: running
+  Distance (km): 3.95
+  Duration (min): 35.24
+  Pace (min/km): 8.92
+  Avg HR: 133
+  Max HR: 146
+  Calories: 298
+  Avg Cadence: 135.328125
+  Elevation Gain (m): 29.6
+  Z1 (min): 4.3
+  Z2 (min): 30.5
+  Z3 (min): 0
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:32:11 | INFO | P02 |   Sending message with key=running
+2026-05-24 18:32:11 | INFO | P02 |   MESSAGE SENT  sent=46
+2026-05-24 18:32:11 | INFO | C02 | {'Activity ID': '21336777997', 'Activity Name': 'Honolulu - Base', 'Avg Cadence': '135.328125', 'Avg HR': '133', 'Avg Stress': '', 'Calories': '298', 'Date': '2025-12-23', 'Distance (km)': '3.95', 'Duration (min)': '35.24', 'Elevation Gain (m)': '29.6', 'End Stress': '', 'Max HR': '146', 'Max Stress': '', 'Pace (min/km)': '8.92', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '', 'Z1 (min)': '4.3', 'Z2 (min)': '30.5', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 45}
+2026-05-24 18:32:11 | INFO | C02 | Processing raw message.
+2026-05-24 18:32:11 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:32:11 | INFO | C02 | consumed=46
+2026-05-24 18:32:13 | INFO | P02 | {
+  Activity ID: 21335541722
+  Date: 2025-12-23
+  Activity Name: Pool Swim
+  Type: lap_swimming
+  Distance (km): 0.8
+  Duration (min): 25.97
+  Pace (min/km): 32.47
+  Avg HR: 126
+  Max HR: 164
+  Calories: 211
+  Avg Cadence: 0
+  Elevation Gain (m): 0
+  Z1 (min): 8.02
+  Z2 (min): 12.26
+  Z3 (min): 2.08
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:32:13 | INFO | P02 |   Sending message with key=lap_swimming
+2026-05-24 18:32:13 | INFO | P02 |   MESSAGE SENT  sent=47
+2026-05-24 18:32:13 | INFO | C02 | {'Activity ID': '21335541722', 'Activity Name': 'Pool Swim', 'Avg Cadence': '0', 'Avg HR': '126', 'Avg Stress': '', 'Calories': '211', 'Date': '2025-12-23', 'Distance (km)': '0.8', 'Duration (min)': '25.97', 'Elevation Gain (m)': '0', 'End Stress': '', 'Max HR': '164', 'Max Stress': '', 'Pace (min/km)': '32.47', 'Start Stress': '', 'Stress Diff': '', 'Type': 'lap_swimming', 'VO2 Max': '', 'Z1 (min)': '8.02', 'Z2 (min)': '12.26', 'Z3 (min)': '2.08', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'lap_swimming', '_kafka_partition': 0, '_kafka_offset': 46}
+2026-05-24 18:32:13 | INFO | C02 | Processing raw message.
+2026-05-24 18:32:13 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:32:13 | INFO | C02 | consumed=47
+2026-05-24 18:32:15 | INFO | P02 | {
+  Activity ID: 21327915141
+  Date: 2025-12-22
+  Activity Name: Ruck back from pool
+  Type: walking
+  Distance (km): 1.72
+  Duration (min): 22.18
+  Pace (min/km): 12.89
+  Avg HR: 112
+  Max HR: 121
+  Calories: 118
+  Avg Cadence: 92.328125
+  Elevation Gain (m): 1.1
+  Z1 (min): 21.63
+  Z2 (min): 0
+  Z3 (min): 0
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 41
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:32:15 | INFO | P02 |   Sending message with key=walking
+2026-05-24 18:32:15 | INFO | P02 |   MESSAGE SENT  sent=48
+2026-05-24 18:32:15 | INFO | C02 | {'Activity ID': '21327915141', 'Activity Name': 'Ruck back from pool', 'Avg Cadence': '92.328125', 'Avg HR': '112', 'Avg Stress': '', 'Calories': '118', 'Date': '2025-12-22', 'Distance (km)': '1.72', 'Duration (min)': '22.18', 'Elevation Gain (m)': '1.1', 'End Stress': '', 'Max HR': '121', 'Max Stress': '', 'Pace (min/km)': '12.89', 'Start Stress': '', 'Stress Diff': '', 'Type': 'walking', 'VO2 Max': '41', 'Z1 (min)': '21.63', 'Z2 (min)': '0', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'walking', '_kafka_partition': 0, '_kafka_offset': 47}
+2026-05-24 18:32:15 | INFO | C02 | Processing raw message.
+2026-05-24 18:32:15 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:32:15 | INFO | C02 | consumed=48
+2026-05-24 18:32:17 | INFO | P02 | {
+  Activity ID: 21327829608
+  Date: 2025-12-22
+  Activity Name: Week-of-slow Pool Swim 
+  Type: lap_swimming
+  Distance (km): 1.01
+  Duration (min): 33.45
+  Pace (min/km): 33.26
+  Avg HR: 125
+  Max HR: 143
+  Calories: 258
+  Avg Cadence: 0
+  Elevation Gain (m): 0
+  Z1 (min): 12.02
+  Z2 (min): 19.82
+  Z3 (min): 0
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:32:17 | INFO | P02 |   Sending message with key=lap_swimming
+2026-05-24 18:32:17 | INFO | P02 |   MESSAGE SENT  sent=49
+2026-05-24 18:32:17 | INFO | C02 | {'Activity ID': '21327829608', 'Activity Name': 'Week-of-slow Pool Swim ', 'Avg Cadence': '0', 'Avg HR': '125', 'Avg Stress': '', 'Calories': '258', 'Date': '2025-12-22', 'Distance (km)': '1.01', 'Duration (min)': '33.45', 'Elevation Gain (m)': '0', 'End Stress': '', 'Max HR': '143', 'Max Stress': '', 'Pace (min/km)': '33.26', 'Start Stress': '', 'Stress Diff': '', 'Type': 'lap_swimming', 'VO2 Max': '', 'Z1 (min)': '12.02', 'Z2 (min)': '19.82', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'lap_swimming', '_kafka_partition': 0, '_kafka_offset': 48}
+2026-05-24 18:32:17 | INFO | C02 | Processing raw message.
+2026-05-24 18:32:17 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:32:17 | INFO | C02 | consumed=49
+2026-05-24 18:32:19 | INFO | P02 | {
+  Activity ID: 21327695436
+  Date: 2025-12-22
+  Activity Name: Honolulu Walking
+  Type: walking
+  Distance (km): 1.7
+  Duration (min): 20.24
+  Pace (min/km): 11.87
+  Avg HR: 114
+  Max HR: 126
+  Calories: 132
+  Avg Cadence: 96.09375
+  Elevation Gain (m): 38.9
+  Z1 (min): 19.45
+  Z2 (min): 0.12
+  Z3 (min): 0
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 41
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:32:19 | INFO | P02 |   Sending message with key=walking
+2026-05-24 18:32:19 | INFO | P02 |   MESSAGE SENT  sent=50
+2026-05-24 18:32:19 | INFO | C02 | {'Activity ID': '21327695436', 'Activity Name': 'Honolulu Walking', 'Avg Cadence': '96.09375', 'Avg HR': '114', 'Avg Stress': '', 'Calories': '132', 'Date': '2025-12-22', 'Distance (km)': '1.7', 'Duration (min)': '20.24', 'Elevation Gain (m)': '38.9', 'End Stress': '', 'Max HR': '126', 'Max Stress': '', 'Pace (min/km)': '11.87', 'Start Stress': '', 'Stress Diff': '', 'Type': 'walking', 'VO2 Max': '41', 'Z1 (min)': '19.45', 'Z2 (min)': '0.12', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'walking', '_kafka_partition': 0, '_kafka_offset': 49}
+2026-05-24 18:32:19 | INFO | C02 | Processing raw message.
+2026-05-24 18:32:19 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:32:19 | INFO | C02 | consumed=50
+2026-05-24 18:32:21 | INFO | P02 | {
+  Activity ID: 21986918741
+  Date: 2026-02-25
+  Activity Name: W01D3-Easy Bike
+  Type: indoor_cycling
+  Distance (km): 0
+  Duration (min): 40.94
+  Pace (min/km): 0
+  Avg HR: 113
+  Max HR: 126
+  Calories: 218
+  Avg Cadence: 0
+  Elevation Gain (m): 0
+  Z1 (min): 36.61
+  Z2 (min): 0.43
+  Z3 (min): 0
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:32:21 | INFO | P02 |   Sending message with key=indoor_cycling
+2026-05-24 18:32:22 | INFO | C02 | {'Activity ID': '21986918741', 'Activity Name': 'W01D3-Easy Bike', 'Avg Cadence': '0', 'Avg HR': '113', 'Avg Stress': '', 'Calories': '218', 'Date': '2026-02-25', 'Distance (km)': '0', 'Duration (min)': '40.94', 'Elevation Gain (m)': '0', 'End Stress': '', 'Max HR': '126', 'Max Stress': '', 'Pace (min/km)': '0', 'Start Stress': '', 'Stress Diff': '', 'Type': 'indoor_cycling', 'VO2 Max': '', 'Z1 (min)': '36.61', 'Z2 (min)': '0.43', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'indoor_cycling', '_kafka_partition': 0, '_kafka_offset': 50}
+2026-05-24 18:32:22 | INFO | C02 | Processing raw message.
+2026-05-24 18:32:22 | INFO | P02 |   MESSAGE SENT  sent=51
+2026-05-24 18:32:22 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:32:22 | INFO | C02 | consumed=51
+2026-05-24 18:32:24 | INFO | P02 | {
+  Activity ID: 21994869910
+  Date: 2026-02-26
+  Activity Name: Honolulu Running
+  Type: running
+  Distance (km): 3.01
+  Duration (min): 21.04
+  Pace (min/km): 6.99
+  Avg HR: 161
+  Max HR: 184
+  Calories: 242
+  Avg Cadence: 130.28125
+  Elevation Gain (m): 5.7
+  Z1 (min): 1.21
+  Z2 (min): 3.95
+  Z3 (min): 4.24
+  Z4 (min): 11.56
+  Z5 (min): 0
+  VO2 Max: 44
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:32:24 | INFO | P02 |   Sending message with key=running
+2026-05-24 18:32:24 | INFO | P02 |   MESSAGE SENT  sent=52
+2026-05-24 18:32:24 | INFO | C02 | {'Activity ID': '21994869910', 'Activity Name': 'Honolulu Running', 'Avg Cadence': '130.28125', 'Avg HR': '161', 'Avg Stress': '', 'Calories': '242', 'Date': '2026-02-26', 'Distance (km)': '3.01', 'Duration (min)': '21.04', 'Elevation Gain (m)': '5.7', 'End Stress': '', 'Max HR': '184', 'Max Stress': '', 'Pace (min/km)': '6.99', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '44', 'Z1 (min)': '1.21', 'Z2 (min)': '3.95', 'Z3 (min)': '4.24', 'Z4 (min)': '11.56', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 51}
+2026-05-24 18:32:24 | INFO | C02 | Processing raw message.
+2026-05-24 18:32:24 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:32:24 | INFO | C02 | consumed=52
+2026-05-24 18:32:26 | INFO | P02 | {
+  Activity ID: 22028723901
+  Date: 2026-03-01
+  Activity Name: King's Runner 10k 
+  Type: running
+  Distance (km): 10.13
+  Duration (min): 64.99
+  Pace (min/km): 6.41
+  Avg HR: 171
+  Max HR: 192
+  Calories: 863
+  Avg Cadence: 155.28125
+  Elevation Gain (m): 24.4
+  Z1 (min): 0
+  Z2 (min): 0.37
+  Z3 (min): 0.92
+  Z4 (min): 62.71
+  Z5 (min): 0.98
+  VO2 Max: 44
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:32:26 | INFO | P02 |   Sending message with key=running
+2026-05-24 18:32:26 | INFO | P02 |   MESSAGE SENT  sent=53
+2026-05-24 18:32:26 | INFO | C02 | {'Activity ID': '22028723901', 'Activity Name': "King's Runner 10k ", 'Avg Cadence': '155.28125', 'Avg HR': '171', 'Avg Stress': '', 'Calories': '863', 'Date': '2026-03-01', 'Distance (km)': '10.13', 'Duration (min)': '64.99', 'Elevation Gain (m)': '24.4', 'End Stress': '', 'Max HR': '192', 'Max Stress': '', 'Pace (min/km)': '6.41', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '44', 'Z1 (min)': '0', 'Z2 (min)': '0.37', 'Z3 (min)': '0.92', 'Z4 (min)': '62.71', 'Z5 (min)': '0.98', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 52}
+2026-05-24 18:32:26 | INFO | C02 | Processing raw message.
+2026-05-24 18:32:26 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:32:26 | INFO | C02 | consumed=53
+2026-05-24 18:32:28 | INFO | P02 | {
+  Activity ID: 22108968518
+  Date: 2026-03-08
+  Activity Name: Honolulu Running
+  Type: running
+  Distance (km): 4.92
+  Duration (min): 44.93
+  Pace (min/km): 9.13
+  Avg HR: 146
+  Max HR: 163
+  Calories: 384
+  Avg Cadence: 137.734375
+  Elevation Gain (m): 60.1
+  Z1 (min): 0.7
+  Z2 (min): 12.37
+  Z3 (min): 31.67
+  Z4 (min): 0.2
+  Z5 (min): 0
+  VO2 Max: 43
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:32:28 | INFO | P02 |   Sending message with key=running
+2026-05-24 18:32:28 | INFO | P02 |   MESSAGE SENT  sent=54
+2026-05-24 18:32:28 | INFO | C02 | {'Activity ID': '22108968518', 'Activity Name': 'Honolulu Running', 'Avg Cadence': '137.734375', 'Avg HR': '146', 'Avg Stress': '', 'Calories': '384', 'Date': '2026-03-08', 'Distance (km)': '4.92', 'Duration (min)': '44.93', 'Elevation Gain (m)': '60.1', 'End Stress': '', 'Max HR': '163', 'Max Stress': '', 'Pace (min/km)': '9.13', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '43', 'Z1 (min)': '0.7', 'Z2 (min)': '12.37', 'Z3 (min)': '31.67', 'Z4 (min)': '0.2', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 53}
+2026-05-24 18:32:28 | INFO | C02 | Processing raw message.
+2026-05-24 18:32:28 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:32:28 | INFO | C02 | consumed=54
+2026-05-24 18:32:30 | INFO | P02 | {
+  Activity ID: 22176695128
+  Date: 2026-03-14
+  Activity Name: Honolulu - W03D6-Build Run
+  Type: running
+  Distance (km): 4.81
+  Duration (min): 45.53
+  Pace (min/km): 9.47
+  Avg HR: 127
+  Max HR: 159
+  Calories: 370
+  Avg Cadence: 131.84375
+  Elevation Gain (m): 52.1
+  Z1 (min): 16.7
+  Z2 (min): 23.48
+  Z3 (min): 4.88
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 43
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:32:30 | INFO | P02 |   Sending message with key=running
+2026-05-24 18:32:30 | INFO | P02 |   MESSAGE SENT  sent=55
+2026-05-24 18:32:30 | INFO | C02 | {'Activity ID': '22176695128', 'Activity Name': 'Honolulu - W03D6-Build Run', 'Avg Cadence': '131.84375', 'Avg HR': '127', 'Avg Stress': '', 'Calories': '370', 'Date': '2026-03-14', 'Distance (km)': '4.81', 'Duration (min)': '45.53', 'Elevation Gain (m)': '52.1', 'End Stress': '', 'Max HR': '159', 'Max Stress': '', 'Pace (min/km)': '9.47', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '43', 'Z1 (min)': '16.7', 'Z2 (min)': '23.48', 'Z3 (min)': '4.88', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 54}
+2026-05-24 18:32:30 | INFO | C02 | Processing raw message.
+2026-05-24 18:32:30 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:32:30 | INFO | C02 | consumed=55
+2026-05-24 18:32:32 | INFO | P02 | {
+  Activity ID: 22176485289
+  Date: 2026-03-14
+  Activity Name: Honolulu Walking
+  Type: walking
+  Distance (km): 1.54
+  Duration (min): 24.07
+  Pace (min/km): 15.66
+  Avg HR: 91
+  Max HR: 121
+  Calories: 112
+  Avg Cadence: 62.765625
+  Elevation Gain (m): 9.1
+  Z1 (min): 2.23
+  Z2 (min): 0
+  Z3 (min): 0
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 44
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:32:32 | INFO | P02 |   Sending message with key=walking
+2026-05-24 18:32:32 | INFO | P02 |   MESSAGE SENT  sent=56
+2026-05-24 18:32:32 | INFO | C02 | {'Activity ID': '22176485289', 'Activity Name': 'Honolulu Walking', 'Avg Cadence': '62.765625', 'Avg HR': '91', 'Avg Stress': '', 'Calories': '112', 'Date': '2026-03-14', 'Distance (km)': '1.54', 'Duration (min)': '24.07', 'Elevation Gain (m)': '9.1', 'End Stress': '', 'Max HR': '121', 'Max Stress': '', 'Pace (min/km)': '15.66', 'Start Stress': '', 'Stress Diff': '', 'Type': 'walking', 'VO2 Max': '44', 'Z1 (min)': '2.23', 'Z2 (min)': '0', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'walking', '_kafka_partition': 0, '_kafka_offset': 55}
+2026-05-24 18:32:32 | INFO | C02 | Processing raw message.
+2026-05-24 18:32:32 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:32:32 | INFO | C02 | consumed=56
+2026-05-24 18:32:34 | INFO | P02 | {
+  Activity ID: 22187833030
+  Date: 2026-03-15
+  Activity Name: Honolulu Running
+  Type: running
+  Distance (km): 7.56
+  Duration (min): 64.07
+  Pace (min/km): 8.48
+  Avg HR: 153
+  Max HR: 165
+  Calories: 625
+  Avg Cadence: 141.203125
+  Elevation Gain (m): 77.1
+  Z1 (min): 7.46
+  Z2 (min): 53.24
+  Z3 (min): 2.6
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 44
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:32:34 | INFO | P02 |   Sending message with key=running
+2026-05-24 18:32:34 | INFO | P02 |   MESSAGE SENT  sent=57
+2026-05-24 18:32:34 | INFO | C02 | {'Activity ID': '22187833030', 'Activity Name': 'Honolulu Running', 'Avg Cadence': '141.203125', 'Avg HR': '153', 'Avg Stress': '', 'Calories': '625', 'Date': '2026-03-15', 'Distance (km)': '7.56', 'Duration (min)': '64.07', 'Elevation Gain (m)': '77.1', 'End Stress': '', 'Max HR': '165', 'Max Stress': '', 'Pace (min/km)': '8.48', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '44', 'Z1 (min)': '7.46', 'Z2 (min)': '53.24', 'Z3 (min)': '2.6', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 56}
+2026-05-24 18:32:34 | INFO | C02 | Processing raw message.
+2026-05-24 18:32:34 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:32:34 | INFO | C02 | consumed=57
+2026-05-24 18:32:36 | INFO | P02 | {
+  Activity ID: 22198730094
+  Date: 2026-03-16
+  Activity Name: Honolulu Walking
+  Type: walking
+  Distance (km): 1.42
+  Duration (min): 18.93
+  Pace (min/km): 13.36
+  Avg HR: 100
+  Max HR: 121
+  Calories: 105
+  Avg Cadence: 69.171875
+  Elevation Gain (m): 16.4
+  Z1 (min): 0
+  Z2 (min): 0
+  Z3 (min): 0
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 44
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:32:36 | INFO | P02 |   Sending message with key=walking
+2026-05-24 18:32:36 | INFO | P02 |   MESSAGE SENT  sent=58
+2026-05-24 18:32:36 | INFO | C02 | {'Activity ID': '22198730094', 'Activity Name': 'Honolulu Walking', 'Avg Cadence': '69.171875', 'Avg HR': '100', 'Avg Stress': '', 'Calories': '105', 'Date': '2026-03-16', 'Distance (km)': '1.42', 'Duration (min)': '18.93', 'Elevation Gain (m)': '16.4', 'End Stress': '', 'Max HR': '121', 'Max Stress': '', 'Pace (min/km)': '13.36', 'Start Stress': '', 'Stress Diff': '', 'Type': 'walking', 'VO2 Max': '44', 'Z1 (min)': '0', 'Z2 (min)': '0', 'Z3 (min)': '0', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'walking', '_kafka_partition': 0, '_kafka_offset': 57}
+2026-05-24 18:32:36 | INFO | C02 | Processing raw message.
+2026-05-24 18:32:36 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:32:36 | INFO | C02 | consumed=58
+2026-05-24 18:32:38 | INFO | P02 | {
+  Activity ID: 22195720699
+  Date: 2026-03-16
+  Activity Name: Honolulu - Hill sprints 10*15s
+  Type: running
+  Distance (km): 2.79
+  Duration (min): 27.4
+  Pace (min/km): 9.82
+  Avg HR: 143
+  Max HR: 173
+  Calories: 267
+  Avg Cadence: 123.359375
+  Elevation Gain (m): 43.2
+  Z1 (min): 12.7
+  Z2 (min): 10.62
+  Z3 (min): 1.48
+  Z4 (min): 0
+  Z5 (min): 0
+  VO2 Max: 
+  Avg Stress: 
+  Max Stress: 
+  Start Stress: 
+  End Stress: 
+  Stress Diff: 
+}
+2026-05-24 18:32:38 | INFO | P02 |   Sending message with key=running
+2026-05-24 18:32:38 | INFO | P02 |   MESSAGE SENT  sent=59
+2026-05-24 18:32:38 | INFO | C02 | {'Activity ID': '22195720699', 'Activity Name': 'Honolulu - Hill sprints 10*15s', 'Avg Cadence': '123.359375', 'Avg HR': '143', 'Avg Stress': '', 'Calories': '267', 'Date': '2026-03-16', 'Distance (km)': '2.79', 'Duration (min)': '27.4', 'Elevation Gain (m)': '43.2', 'End Stress': '', 'Max HR': '173', 'Max Stress': '', 'Pace (min/km)': '9.82', 'Start Stress': '', 'Stress Diff': '', 'Type': 'running', 'VO2 Max': '', 'Z1 (min)': '12.7', 'Z2 (min)': '10.62', 'Z3 (min)': '1.48', 'Z4 (min)': '0', 'Z5 (min)': '0', '_kafka_key': 'running', '_kafka_partition': 0, '_kafka_offset': 58}
+2026-05-24 18:32:38 | INFO | C02 | Processing raw message.
+2026-05-24 18:32:38 | INFO | C02 | MESSAGE CONSUMED
+2026-05-24 18:32:38 | INFO | C02 | consumed=59
+2026-05-24 18:32:40 | INFO | P02 | ========================
+2026-05-24 18:32:40 | INFO | P02 | SECTION E. Exit
+2026-05-24 18:32:40 | INFO | P02 | ========================
+2026-05-24 18:32:40 | INFO | P02 | Summary:
+2026-05-24 18:32:40 | INFO | P02 | Sent 59 message(s) to topic 'streaming-02-kafka-garmin'.
+2026-05-24 18:32:40 | INFO | P02 | ========================
+2026-05-24 18:32:40 | INFO | P02 | Producer executed successfully!
+2026-05-24 18:32:40 | INFO | P02 | ========================
+2026-05-24 18:32:48 | INFO | C02 | No message received within 10.0s timeout.
+2026-05-24 18:32:48 | INFO | C02 | Producer finished or paused. Stopping consumer.
+2026-05-24 18:32:48 | INFO | C02 | Kafka consumer closed.
+2026-05-24 18:32:48 | INFO | C02 | ========================
+2026-05-24 18:32:48 | INFO | C02 | SECTION E. Exit
+2026-05-24 18:32:48 | INFO | C02 | ========================
+2026-05-24 18:32:48 | INFO | C02 | Summary:
+2026-05-24 18:32:48 | INFO | C02 | Consumed 59 message(s) from topic 'streaming-02-kafka-garmin'.
+2026-05-24 18:32:48 | INFO | C02 | OUTPUT_CSV = data\output\consumed_garmin_data.csv
+2026-05-24 18:32:48 | INFO | C02 | ========================
+2026-05-24 18:32:48 | INFO | C02 | Consumer executed successfully!
+2026-05-24 18:32:48 | INFO | C02 | ========================
