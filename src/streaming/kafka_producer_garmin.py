@@ -1,6 +1,6 @@
-"""src/streaming/kafke_producer_case.py - Kafka producer example.
+"""src/streaming/kafka_producer_garmin.py - Kafka producer example.
 
-Reads sales from data/sales.csv
+Reads Garmin data from data/GarminTrainingData.csv
 and sends records to a Kafka topic one message at a time.
 
 Start with main() at the bottom.
@@ -14,7 +14,7 @@ Date: 2026-05
 
 Terminal command to run this file from the root project folder:
 
-    uv run python -m streaming.kafka_producer_critical_section
+    uv run python -m streaming.kafka_producer_garmin
 
 """
 
@@ -61,7 +61,7 @@ MESSAGE_INTERVAL_SECONDS: Final[float] = float(msg_interval_seconds)
 
 ROOT_DIR: Final[Path] = Path.cwd()
 DATA_DIR: Final[Path] = ROOT_DIR / "data"
-SALES_CSV: Final[Path] = DATA_DIR / "sales.csv"
+GARMIN_CSV: Final[Path] = DATA_DIR / "GarminTrainingData.csv"
 
 
 # ==========================================================
@@ -77,7 +77,7 @@ def log_paths() -> None:
     LOG.info("========================")
     log_path(LOG, "ROOT_DIR", ROOT_DIR)
     log_path(LOG, "DATA_DIR", DATA_DIR)
-    log_path(LOG, "SALES_CSV", SALES_CSV)
+    log_path(LOG, "GARMIN_CSV", GARMIN_CSV)
 
 
 def load_settings() -> KafkaSettings:
@@ -109,28 +109,28 @@ def verify_connection(settings: KafkaSettings) -> None:
 
 
 def get_message_key(message: dict[str, Any]) -> str:
-    """Return the Kafka message key for a sale record."""
+    """Return the Kafka message key for a Garmin activity record."""
     try:
-        return str(message["region_id"])
+        return str(message["Type"])
     except KeyError as error:
         msg = missing_csv_field_message(
-            field="region_id",
+            field="Type",
             available_fields=list(message.keys()),
         )
         raise KeyError(msg) from error
 
 
 def generate_messages(count: int) -> Generator[dict[str, str]]:
-    """Generate a stream of sales from the input CSV file."""
-    sales_rows = read_csv_rows(SALES_CSV)
-    yield from sales_rows[:count]
+    """Generate a stream of Garmin activities from the input CSV file."""
+    garmin_rows = read_csv_rows(GARMIN_CSV)
+    yield from garmin_rows[:count]
 
 
 def send_messages(producer: Any, settings: KafkaSettings) -> int:
     """Generate and send messages to the Kafka topic."""
     LOG.info("Sending messages...")
     LOG.info(f"Sending up to {MESSAGE_COUNT} message(s) to topic {settings.topic!r}.")
-    LOG.info("Watch each sale arrive. Press CTRL+C to stop early.\n")
+    LOG.info("Watch each activity arrive. Press CTRL+C to stop early.\n")
 
     sent_count = 0
 

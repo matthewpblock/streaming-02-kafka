@@ -1,8 +1,8 @@
-"""src/streaming/kafka_consumer_case.py.
+"""src/streaming/kafka_consumer_garmin.py.
 
 Kafka consumer: full pipeline example.
 
-Reads sales messages from a Kafka topic.
+Reads Garmin activity messages from a Kafka topic.
 
 Start with main() at the bottom.
 Work up to see how it all fits together.
@@ -15,7 +15,7 @@ Date: 2026-05
 
 Terminal command to run this file from the root project folder:
 
-    uv run python -m streaming.kafka_consumer_critical_section
+    uv run python -m streaming.kafka_consumer_garmin
 
 """
 
@@ -65,7 +65,7 @@ ROOT_DIR: Final[Path] = Path.cwd()
 DATA_DIR: Final[Path] = ROOT_DIR / "data"
 OUTPUT_DIR: Final[Path] = DATA_DIR / "output"
 
-OUTPUT_CSV: Final[Path] = OUTPUT_DIR / "consumed_sales_critical_section.csv"
+OUTPUT_CSV: Final[Path] = OUTPUT_DIR / "consumed_garmin_data.csv"
 
 
 # ==========================================================
@@ -201,17 +201,26 @@ def process_message(row: dict[str, Any]) -> dict[str, Any]:
     LOG.info("Processing raw message.")
 
     try:
-        # Professional Modification: Keep original fields and add a derived metric
+        # Professional Modification: Keep original fields and add a derived metric (Speed km/h)
         processed_row = row.copy()
-        processed_row["total_sale_value"] = round(
-            float(row.get("unit_price", 0.0)) * int(row.get("quantity", 1)), 2
-        )
+        
+        distance_str = row.get("Distance (km)", "0.0")
+        duration_str = row.get("Duration (min)", "0.0")
+        
+        distance = float(distance_str) if distance_str else 0.0
+        duration_min = float(duration_str) if duration_str else 0.0
+        
+        if duration_min > 0:
+            processed_row["Speed (km/h)"] = round(distance / (duration_min / 60), 2)
+        else:
+            processed_row["Speed (km/h)"] = 0.0
+            
         return processed_row
     except Exception as e:
         LOG.error(f"Error processing message: {e} | Raw row: {row}")
         # Return a fallback row to ensure consistent CSV columns
         fallback_row = row.copy()
-        fallback_row["total_sale_value"] = 0.0
+        fallback_row["Speed (km/h)"] = 0.0
         return fallback_row
 
 
